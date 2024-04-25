@@ -42,7 +42,7 @@ main {
 
 .box-2-nav {
     padding: 1rem;
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
 }
 
 .box-3-main {
@@ -62,7 +62,7 @@ main {
 
 header {
     background-color: var(--gray-color);
-    height: 100px;
+    height: auto;
 }
 
 header p {
