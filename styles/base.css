@@ -16,6 +16,10 @@ body {
     height: 90vh;
 }
 
+main {
+    max-width: 100%;
+}
+
 h1 {
     text-align: center;
     align-content: center;
