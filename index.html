@@ -1,21 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>My Home Page</title>
-    <meta name="description" content="description of page using keywords" />
-    <meta name="author" content="James Phillip K. De Guzman" />
-    <link rel="stylesheet" href="styles/filename" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Phillip De Guzman">
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals | James Phillip De Guzman | My Home Page"
+    >
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    >
+
+    <title>WDD 131 - Dynamic Web Fundamentals - James Phillip De Guzman</title>
+    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
-    <header><h1>Page Title - Heading 1</h1></header>
-    <nav></nav>
-    <main></main>
-    <footer>
-      ©James Phillip K. De Guzman | BYU-Idaho | WDD 131 - Spring Semester
-    </footer>
-    <script src="scripts"></script>
+    <div class="wrapper">
+      <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - James Phillip De Guzman</h1>
+        <nav class="navlinks-top">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jamesphillipdeguzman/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://byui.instructure.com/" target="_blank"
+                >I-Learn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng"
+                target="_blank"
+                >Scripture</a
+              >
+            </li>
+            <li><a href="#">Final Project</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="grid-container">
+        <section class="card1">
+          <h2>About Me</h2>
+          <article class="about-me">
+            <img
+              src="images/James.jpg"
+              alt="Photo of James Phillip De Guzman"
+            >
+            <h3>About me</h3>
+            <p>
+              I am an aspiring web developer who loves to learn about html, css
+              and javascript! With great passion for learning and a
+              determination to win my academic prize, I believe that pursuing
+              higher education is the key to success!
+            </p>
+          </article>
+
+          <article class="about-my-hobby">
+            <img src="images/violin.png" alt="Photo of the Philippine's Flag" >
+            <h3>My Hobby</h3>
+            <p>
+              I am also an adult beginner violinist who loves to practice during
+              my spare time! I've practiced for more than 4 years now, so far I
+              think I made some good progress with this instrument.
+            </p>
+          </article>
+          <article class="about-the-philippines">
+            <img
+              src="images/philippines.png"
+              alt="Photo of the Philippine's Flag"
+            >
+            <h3>Where I live</h3>
+            <p>
+              The Philippines, an archipelago in Southeast Asia, is culturally
+              diverse, with over 7,000 islands. Filipino and English are its
+              official languages, but it's home to approximately 120 to 175
+              languages overall, reflecting its rich linguistic heritage.
+            </p>
+          </article>
+        </section>
+        <section class="card2">
+          <h2>Web Dev Resources</h2>
+          <nav class="navlinks-sidebar">
+            <ul>
+              <li>
+                <a href="https://byui-cse.github.io/wdd131-ww-course/"
+                  >Course Content Home
+                </a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/html/default.asp"
+                  >HTML Tutorial</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/css/default.asp"
+                  >CSS Tutorial</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/js/default.asp"
+                  >JavaScript Tutorial</a
+                >
+              </li>
+              <li><a href="https://coolors.co/">Coolors</a></li>
+              <li>
+                <a href="https://validator.w3.org/"
+                  >W3C Markup Validation Service</a
+                >
+              </li>
+              <li>
+                <a href="https://jigsaw.w3.org/css-validator/"
+                  >W3C CSS Validation Service</a
+                >
+              </li>
+              <li>
+                <a href="https://code.visualstudio.com/download"
+                  >Download Visual Code Studio</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </main>
+      <footer>
+        <p>
+          ©<span id="currentyear"></span> 🎻 James Phillip De Guzman 🎻
+          Philippines
+        </p>
+        <p class="lastmodified">
+          Last Modified: <span id="lastModified"></span>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
-

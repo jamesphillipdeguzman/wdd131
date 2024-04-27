@@ -1,0 +1,206 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 90vh;
+}
+
+h1 {
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+    color: #000;
+    height: 40px;
+}
+
+h2 {
+    background-color: #04304d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+h3 {
+    padding: 10px 40px;
+    text-align: center;
+    align-content: center;
+}
+
+nav.navlinks-top {
+    background-color: #006eb6;
+}
+
+
+nav.navlinks-top ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav.navlinks-sidebar ul {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+nav.navlinks-top a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav.navlinks-sidebar a {
+
+    color: black;
+    text-decoration: none;
+
+
+}
+
+nav.navlinks-top a:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: rgb(233, 236, 12);
+    box-shadow: 0 0 4px #888888;
+    border-radius: 10px;
+
+}
+
+nav.navlinks-sidebar a:hover {
+    text-decoration: underline;
+    color: #fff;
+    background-color: #006eb6;
+    opacity: 0.9;
+
+}
+
+header {
+    background-color: #ddd;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.grid-container {
+    display: grid;
+    height: 80vh;
+    width: 85vw;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px 0;
+
+
+}
+
+.card1 {
+
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #888888;
+    grid-column: span 2;
+
+
+}
+
+article {
+    display: flex;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+article.about-me {
+    /* background-color: #006eb6; */
+    margin: 0 50px;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+article.about-my-hobby {
+    /* background-color: #006eb6; */
+    margin: 0 50px;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+article.about-the-philippines {
+    /* background-color: #006eb6; */
+    margin: 0 50px;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+article.about-me img {
+    width: 150px;
+    padding-top: 5px;
+    padding-right: 20px;
+
+
+}
+
+article.about-my-hobby img {
+    width: 150px;
+    padding-top: 5px;
+    padding-right: 20px;
+
+
+}
+
+article.about-the-philippines img {
+        width: 150px;
+        padding-top: 5px;
+        padding-right: 20px;
+}
+
+.card1 > p {
+
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 20px 10px;
+
+
+}
+
+.card2 {
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #888888;
+    grid-column: span 1;
+    text-align: center;
+
+
+}
+
+footer {
+    background-color: #ddd;
+    text-align: center;
+    align-content: center;
+    height: 42px;
+}
+
+.lastmodified {
+    font-size: 0.9rem;
+}
