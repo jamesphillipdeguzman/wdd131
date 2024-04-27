@@ -63,6 +63,7 @@ main {
 header {
     background-color: var(--gray-color);
     height: auto;
+    grid-column: 1 / 4;
 }
 
 header p {
@@ -79,12 +80,15 @@ nav {
     height: 50px;
     margin: 0;
 }
+
 nav a {
     color: var(--nav-link-color);
     font-family: var(--paragraph-font);
     text-decoration: none;
 
 }
+
+
 
 nav a:hover {
     color: var(--nav-hover-link-color);
