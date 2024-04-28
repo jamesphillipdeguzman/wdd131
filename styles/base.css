@@ -163,8 +163,8 @@ article {
 
 article.about-me {
     /* background-color: #006eb6; */
-    margin: 0 10px;
-    padding: 0 100px;
+    margin: 0 auto;
+    padding: 0 10px;
     border-bottom: 1px solid #ddd;
     max-width: 100%;
     height: auto;
@@ -174,8 +174,8 @@ article.about-me {
 
 article.about-my-hobby {
     /* background-color: #006eb6; */
-    margin: 0 10px;
-    padding: 0 100px;
+    margin: 0 auto;
+    padding: 0 10px;
     border-bottom: 1px solid #ddd;
     max-width: 100%;
     height: auto;
@@ -185,8 +185,8 @@ article.about-my-hobby {
 
 article.about-the-philippines {
     /* background-color: #006eb6; */
-    margin: 0 10px;
-    padding: 0 100px;
+    margin: 0 auto;
+    padding: 0 10px;
     border-bottom: 1px solid #ddd;
     max-width: 100%;
     height: auto;
