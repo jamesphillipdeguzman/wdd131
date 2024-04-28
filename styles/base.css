@@ -120,6 +120,15 @@ header {
 
 }
 
+article {
+    display: grid;
+    align-content: center;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(auto, minmax(100px, 1fr));
+
+
+}
+
 .card1 {
 
     background-color: white;
@@ -152,14 +161,7 @@ header {
 .card2>h2 {
     font-size: 1rem;
 }
-article {
-    display: grid;
-    align-content: center;
-    margin-bottom: 50px;
-    grid-template-columns: repeat(auto, minmax(100px, 1fr)); */
 
-
-}
 
 article.about-me {
     /* background-color: #006eb6; */
@@ -258,7 +260,7 @@ footer {
             align-content: center;
             margin-bottom: 50px;
             grid-template-columns: repeat(auto, minmax(100px, 1fr));
-            */
+
         }
 
         article.about-me {
