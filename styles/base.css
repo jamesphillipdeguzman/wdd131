@@ -36,6 +36,7 @@ h2 {
     text-align: center;
     color: white;
 
+
 }
 
 h3 {
@@ -102,7 +103,7 @@ header {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto, minmax(100px, 1fr));
     gap: 10px;
     align-items: center;
 
@@ -111,7 +112,7 @@ header {
 .grid-container {
     display: grid;
 
-    grid-template-columns: repeat(auto, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto, minmax(100px, 1fr));
     margin: 0 auto;
     padding: 20px 0;
     gap: 10px;
@@ -150,14 +151,14 @@ article {
     display: grid;
     align-content: center;
     margin-bottom: 50px;
-    grid-template-columns: repeat(auto, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto, minmax(100px, 1fr)); */
 
 
 }
 
 article.about-me {
     /* background-color: #006eb6; */
-    margin: 0 200px;
+    margin: 0 10px;
     padding: 0 100px;
     border-bottom: 1px solid #ddd;
     max-width: 100%;
@@ -168,7 +169,7 @@ article.about-me {
 
 article.about-my-hobby {
     /* background-color: #006eb6; */
-    margin: 0 200px;
+    margin: 0 10px;
     padding: 0 100px;
     border-bottom: 1px solid #ddd;
     max-width: 100%;
@@ -179,7 +180,7 @@ article.about-my-hobby {
 
 article.about-the-philippines {
     /* background-color: #006eb6; */
-    margin: 0 200px;
+    margin: 0 10px;
     padding: 0 100px;
     border-bottom: 1px solid #ddd;
     max-width: 100%;
