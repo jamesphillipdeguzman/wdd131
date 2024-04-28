@@ -251,3 +251,81 @@ footer {
 .lastmodified {
     font-size: 0.9rem;
 }
+
+@media all and (max-width: 385px) {
+    article {
+            display: grid;
+            align-content: center;
+            margin-bottom: 50px;
+            grid-template-columns: repeat(auto, minmax(100px, 1fr));
+            */
+        }
+
+        article.about-me {
+            /* background-color: #006eb6; */
+            margin: 0 auto;
+            padding: 0 10px;
+            border-bottom: 1px solid #ddd;
+            max-width: 80%;
+            height: auto;
+
+
+        }
+
+        article.about-my-hobby {
+            /* background-color: #006eb6; */
+            margin: 0 auto;
+            padding: 0 10px;
+            border-bottom: 1px solid #ddd;
+            max-width: 80%;
+            height: auto;
+
+
+        }
+
+        article.about-the-philippines {
+            /* background-color: #006eb6; */
+            margin: 0 auto;
+            padding: 0 10px;
+            border-bottom: 1px solid #ddd;
+            max-width: 80%;
+            height: auto;
+
+
+        }
+
+        article.about-me img {
+            width: 150px;
+            padding-top: 5px;
+            padding-right: 20px;
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+
+
+
+
+        }
+
+        article.about-my-hobby img {
+            width: 150px;
+            padding-top: 5px;
+            padding-right: 20px;
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+
+
+
+        }
+
+        article.about-the-philippines img {
+            width: 150px;
+            padding-top: 5px;
+            padding-right: 20px;
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+
+        }
+}
