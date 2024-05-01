@@ -36,11 +36,13 @@ h2 {
     text-align: center;
     background-color: aliceblue;
     align-items: center;
+    font-size: 0.9rem;
     padding: 20px;
     margin: 10px 20px;
     height: 100px;
     grid-column: span 1;
     border-radius: 4px;
+    max-width: 100%;
 }
 
 header {
@@ -54,9 +56,39 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 
 .lastmodified {
     font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 514px) {
+
+    .demo {
+
+            display: grid;
+            /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            background-color: lightblue;
+
+
+    }
+
+    .demo>p {
+        justify-content: center;
+        text-align: center;
+        background-color: aliceblue;
+        align-items: center;
+        padding: 10px;
+        font-size: 0.7rem;
+        margin: 10px 20px;
+        height: 100px;
+        grid-column: span 1;
+        border-radius: 4px;
+        max-width: 100%;
+    }
+
 }
