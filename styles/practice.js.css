@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 
@@ -36,7 +37,6 @@ h2 {
     text-align: center;
     background-color: aliceblue;
     align-items: center;
-    font-size: 0.9rem;
     padding: 20px;
     margin: 10px 20px;
     height: 100px;
