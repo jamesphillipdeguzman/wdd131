@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="James Phillip De Guzman" />
+    <meta name="description" content="Practice  JavaScript Examples" />
+    <title>Practice JavaScript Examples</title>
+    <link rel="stylesheet" href="../styles/practice.js.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <h1>Practice JavaScript Examples</h1>
+      </header>
+      <main>
+        <h2>James Phillip De Guzman | WDD 131 | BYU-Idaho</h2>
+        <div class="demo">
+          <p id="ex1"></p>
+          <p id="ex2"></p>
+          <p id="ex3"></p>
+          <p id="ex4"></p>
+          <p id="ex5"></p>
+          <p id="ex6"></p>
+          <p id="ex7"></p>
+          <p id="ex8"></p>
+          <p id="ex9"></p>
+          <p id="ex10"></p>
+        </div>
+      </main>
+      <footer>
+        <p>
+          ©<span id="currentyear"></span> 🎻 James Phillip De Guzman 🎻
+          Philippines
+        </p>
+        <p class="lastmodified">
+          Last Modified: <span id="lastModified"></span>
+        </p>
+      </footer>
+    </div>
+    <script>
+      //    Example 1: Add two numbers
+
+      var a = 1;
+      var b = 2;
+      var c = a + b;
+
+      document.getElementById("ex1").innerHTML =
+        "<strong>" +
+        "Example 1: Add two numbers" +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        `${a} + ${b} = ${c}`;
+
+      //    Example 2: Multiply two numbers
+
+      var a = 10;
+      var b = 5;
+      var c = a * b;
+
+      document.getElementById("ex2").innerHTML =
+        "<strong>" +
+        "Example 2: Multiply two numbers " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        `${a} * ${b} = ${c}`;
+
+      //    Example 3: Subtract one from a number
+      var a = 77;
+      var b = -5;
+      var c = a - b;
+
+      document.getElementById("ex3").innerHTML =
+        "<strong>" +
+        "Example 3: Subtract one from a number " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        `${a} - (${b}) = ${c}`;
+
+      //    Example 4: Concatenate two strings together.
+
+      const firstName = "James ";
+      const lastName = "De Guzman";
+
+      let fullName = firstName + lastName;
+      //console.log(fullName);
+
+      document.getElementById("ex4").innerHTML =
+        "<strong>" +
+        "Example 4: Concatenate two strings together " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        "My name is " +
+        fullName;
+
+      //    Example 5: Assign a value to a variable
+
+      var familyMemberCount = 2;
+      document.getElementById("ex5").innerHTML =
+        "<strong>" +
+        "Example 5: Assign a value to a variable " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        "My wife and I started our family of " +
+        `${familyMemberCount}` +
+        " members in August 2013.";
+
+      //    Example 6: increment the value in a variable by 3
+
+      familyMemberCount += 3;
+      document.getElementById("ex6").innerHTML =
+        "<strong>" +
+        "Example 6: increment the value in a variable by 3 " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        "After almost 11 years, our family now have  " +
+        `${familyMemberCount}` +
+        " members in April 2024.";
+
+      // Example 7: compare two values to see if they are the same
+      var getTithing = function (income) {
+        var tithing = 0.1 * parseFloat(income);
+        return tithing;
+      };
+
+      let income = 20000;
+
+      var myTithing = getTithing(20000);
+
+      var resultDiv = (document.getElementById("ex7").innerHTML =
+        "<strong>" +
+        "Example 7: Compare two values to see if they are the same " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        "My monthly income of " +
+        `${income}` +
+        " and tithing of " +
+        `${myTithing}` +
+        " are not the same amount.");
+
+      //    Example 8: Check to see if one number is less than another number
+
+      var checkNumber = function(a, b) {
+            // Check which number is lesser
+            var a = parseFloat(a);
+            var b = parseFloat(b);
+            var result = (a > b) ? `${a} > ${b}` : (a < b) ? `${a} < ${b}` : `${a} = ${b}`;
+            return result;
+      }
+
+      var result = checkNumber(32, 90);
+
+      var outputDiv = (document.getElementById("ex8").innerHTML =
+        "<strong>" +
+        "Example 8: Check to see if one number is less than another number " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        "The result is " +
+        `${result}` + ".");
+
+
+    //    Example 9: Check to see if two values are NOT equal
+
+      var checkNumber = function(a, b) {
+            // Check for equality
+            var a = parseFloat(a);
+            var b = parseFloat(b);
+            var result = (a > b) ? `${a} > ${b}` : (a < b) ? `${a} < ${b}` : `${a} !== ${b}`;
+            return result;
+      }
+
+      var result = checkNumber(33, "33");
+
+      var outputDiv = (document.getElementById("ex9").innerHTML =
+        "<strong>" +
+        "Example 9: Check to see if two values are NOT equal " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        "The result is " +
+        `${result}` + ".");
+
+      //    Example 10: Check to see if a value is less than 10 and greater than 0
+
+      var checkNumber = function(a, b) {
+            // Check which number is less than 10 and greater than 0
+
+            if(a < b && a > 0) {
+                return a;
+            } else  {
+                return b;
+            }
+      }
+
+      var result = checkNumber(1, 10);
+
+      var outputDiv = (document.getElementById("ex10").innerHTML =
+        "<strong>" +
+        "Example 10: Check to see if a value is less than 10 and greater than 0 " +
+        "</strong>" +
+        "</br>" +
+        "</br>" +
+        "The result is " +
+        `${result}` + ".");
+      //
+    </script>
+  </body>
+</html>
