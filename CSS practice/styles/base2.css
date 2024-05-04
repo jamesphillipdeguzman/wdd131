@@ -1,0 +1,115 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: grid; /* Use grid layout */
+  grid-template-rows: 1fr auto 1fr; /* Define rows: header, content, footer */
+}
+
+.container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr auto 1fr; /* Three columns: left sidebar, main content, right sidebar */
+}
+
+.nav-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.navlinks1 ul {
+  display: flex;
+  justify-content: flex-start; /* Adjust alignment to flex-start */
+  padding: 10px;
+  margin: 10px auto;
+  
+  
+}
+
+nav.navlinks2 ul {
+  display: flex;
+  justify-content: flex-end; /* Adjust alignment to flex-end */
+  padding: 10px;
+  margin: 10px auto;
+}
+
+ul, li {
+  margin: 10px;
+  list-style-type: none;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+nav.navlinks1 a {
+  display: block; /* Make the <a> tag a block element */
+  padding: 10px 20px; /* Set padding for the entire area, adjust as needed */
+}
+
+nav.navlinks2 a {
+  display: block; /* Make the <a> tag a block element */
+  padding: 10px 20px; /* Set padding for the entire area, adjust as needed */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover {
+  background-color: orange; /* Change background color on hover */
+  transition: background-color 0.3s ease;
+  
+}
+
+h2 {
+  margin: 20px;
+  border: 2px solid #ccc;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+}
+
+main {
+  grid-column: 2; /* Main content spans across the second column */
+  background-color: #f0f0f0;
+  padding: 0;
+}
+
+main > p {
+  padding: 20px;
+}
+
+.right-sidebar > ul,
+.left-sidebar > ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.right-sidebar > ul li,
+.left-sidebar > ul li {
+  margin: 10px auto;
+}
+
+aside {
+  flex: 0 0 auto;
+}
+
+/* Responsive adjustments */
+@media all and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Only one column in smaller screens */
+  }
+  .right-sidebar, .left-sidebar {
+    width: 100%;
+  }
+}
+
+footer {
+  margin-top: auto;
+}

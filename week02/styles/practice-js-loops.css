@@ -1,0 +1,96 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+h1 {
+
+    text-align: center;
+    color: white;
+}
+
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.demo {
+
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    background-color: lightblue;
+    
+
+
+}
+
+.demo>p {
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 20px;
+    height: 100px;
+    grid-column: span 1;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+header {
+    background-color: #04304d;
+
+}
+
+footer {
+    background-color: #04304d;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+
+.lastmodified {
+    font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 514px) {
+
+    .demo {
+
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        background-color: lightblue;
+
+
+    }
+
+    .demo>p {
+        justify-content: center;
+        text-align: center;
+        background-color: aliceblue;
+        align-items: center;
+        padding: 10px;
+        font-size: 0.7rem;
+        margin: 10px 20px;
+        height: 100px;
+        grid-column: span 1;
+        border-radius: 4px;
+        max-width: 100%;
+    }
+
+}
