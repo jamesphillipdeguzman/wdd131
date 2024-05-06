@@ -1,10 +1,8 @@
 
 const input = document.querySelector('#favchap');
-let addedItem = 0;
 
 function addBOMChapter(bomVerse) {
-    // Counter for added scriptures
-    addedItem = addedItem + 1;
+
     console.log(bomVerse);
 
     // Create the list item
@@ -20,15 +18,12 @@ function addBOMChapter(bomVerse) {
         deleteButton.textContent = '❌';
 
         li.append(deleteButton);
-        list.append(addedItem);
-        scripture = list.append(li);
-        
+        list.append(li);
+
 
     }
 
 
-
-    document.getElementById('top10').textContent = "📖 Book of Mormon - Top " + addedItem;
 
     // Define which Book of Mormon verse to delete
 
