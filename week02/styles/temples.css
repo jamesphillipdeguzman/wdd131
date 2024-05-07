@@ -199,7 +199,7 @@ footer {
 
  } */
 
- @media mobile and (max-width:629px) {
+ @media only screen and (max-width:629px) {
 
      main {
 
@@ -233,7 +233,7 @@ footer {
 
  }
 
-@media screen and (min-width:607px) and (max-width: 1048px) {
+@media only screen and (min-width:607px) and (max-width: 1048px) {
 
     main {
 
@@ -279,7 +279,7 @@ footer {
 }
 
 
- @media screen and (max-width:607px) {
+ @media only screen and (max-width:607px) {
 
      main {
 
