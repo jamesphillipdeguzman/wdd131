@@ -1,27 +1,52 @@
 /* large view navigation ************************************/
-@media (min-width: 37.5em) {
+/*Apply this media query when viewport width is at least 600px wide.*/
+@media (min-width: 1290px)  {
     h1 {
         font-size: 2.5rem;
         margin-left: 0;
-        text-align: center;
+        text-align: left;
+
     }
 
 
     #menu {
-        display: none;
+        display: none;  /*hide the hamburger*/
 
     }
+
 
     .navigation {
         flex-direction: row;
+
+
     }
+
+    /* nav ul {
+        display: block;
+
+    } */
 
     .navigation a {
         display: block;
+
         flex: 1 1 100%;
     }
 
     main {
-        margin: 1rem auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 220px);
+        grid-gap: 5px;
+        align-items: center;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+
     }
 }
+
+
+
+
