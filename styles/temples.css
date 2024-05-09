@@ -116,7 +116,7 @@ nav ul {
     align-content: space-between;
     margin: 0 auto;
     max-width: 100%;
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
 }
 
 .navigation a {
@@ -125,8 +125,7 @@ nav ul {
     text-decoration: none;
     text-align: center;
     font-size: 1.5rem;
-
-
+    margin: 10px auto;
 
 }
 
@@ -134,33 +133,26 @@ nav ul {
 
 .navigation li {
     list-style: none;
-    margin: 0 50px;
-    flex: 1 0 auto;
+    margin: 0 20px;
+    padding: 0 30px;
+    /* flex: 1 1 auto; */
+    padding-bottom: 5px;
 
-
-}
-
-.navigation li:before {
-    content: '\2022';
-    color: rgba(178, 34, 34, 0.9);
-    display: inline-block;
-    width: 1.2em;
-    margin: 0;
 
 
 }
 
-.navigation li::marker {
-    color: rgba(178, 34, 34, 0.9);
-}
-.navigation li:hover::before {
+
+
+.navigation li:hover {
     /* background-color: rgb(204, 138, 57, 0.6); */
     /* text-decoration: underline; */
-    content: '👇';
-    background-color: rgba(178, 34, 34, 0.9);;
+    /* content: '👇'; */
+    background-color: rgba(255, 222, 35, 0.9);
     transition: background-color 0.4s ease;
     /* content: '\25BA'; */
     /* background-color: aliceblue; */
+
 }
 
 figure {
@@ -351,9 +343,10 @@ footer {
         flex: 1 0 auto;
 
 
+
     }
 
-    .navigation li:before {
+    /* .navigation li:before {
         content: '\2022';
         color: rgba(178, 34, 34, 0.9);
         display: inline-block;
@@ -361,22 +354,20 @@ footer {
         margin: 0;
 
 
-    }
+    } */
 
-    .navigation li::marker {
+    /* .navigation li::marker {
         color: rgba(178, 34, 34, 0.9);
-    }
+    } */
 
-    .navigation li:hover::before {
-        /* background-color: rgb(204, 138, 57, 0.6); */
-        /* text-decoration: underline; */
+    /* .navigation li:hover::before {
+
         content: '👇';
         background-color: rgba(178, 34, 34, 0.9);
         ;
         transition: background-color 0.4s ease;
-        /* content: '\25BA'; */
-        /* background-color: aliceblue; */
-    }
+
+    } */
 
     #menu::before {
         content: "☰";
