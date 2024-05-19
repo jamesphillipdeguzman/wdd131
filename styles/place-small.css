@@ -37,12 +37,12 @@ h1 {
 
 }
 
-#title-header-data {
+/* #title-header {
     text-align: center;
     margin-top: 32px;
     color: var(--card-bg-color);
 
-}
+} */
 
 .grid-container {
     display: grid;
