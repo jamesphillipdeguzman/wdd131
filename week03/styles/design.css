@@ -1,0 +1,157 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.text-large {
+    font-size: 1.5rem;
+}
+
+.text-medium {
+    font-size: 1.2rem;
+}
+
+.text-small {
+    font-size: 1rem;
+}
+
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+
+
+@property --box-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #bbb;
+}
+.parent {
+  --box-color: rgb(11, 71, 11);
+  background-color: var(--box-color);
+}
+
+.child {
+  width: 80%;
+  height: 40%;
+  background-color: var(--box-color);
+}
+
+@keyframes colorChange {
+    0% {
+        --box-color: red;
+    }
+
+    25% {
+        --box-color: blue;
+    }
+
+    50% {
+        --box-color: yellow;
+    }
+
+
+
+    100% {
+        --box-color: green;
+    }
+}
+
+.parent {
+    animation: colorChange 15s infinite;
+    background-color: var(--box-color);
+}
+
+.child {
+    width: 80%;
+    height: 40%;
+    background-color: var(--box-color);
+}
+
+body {
+    font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+marquee {
+    padding: 1rem;
+    background-color: #eee;
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+    background-color: var(--box-color, yellow);
+}
+
+main {
+    display: grid;
+
+}
+
+.banner {
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: rgb(230, 243, 254);
+    font-weight: 700;
+    text-align: center;
+}
+
+section {
+    padding: 1rem;
+}
+
+.card2>ul {
+    list-style-type: none;
+    padding: 1rem;
+
+
+}
+
+card2>li {
+    margin: 0 auto;
+}
+
+h2 {
+    color: navy;
+    text-align: left;
+    grid-column: span 3;
+}
+
+article p {
+    text-align: justify;
+}
+
+.callout {
+    color: #fff;
+    background-color: #702963;
+    padding: 1rem;
+    grid-column: span 3;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left;
+}

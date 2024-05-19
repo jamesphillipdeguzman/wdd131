@@ -1,0 +1,59 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    /* maintain image aspect-ratio */
+    object-fit: cover;
+}
+
+body {
+
+    font-family: Verdana, Helvetica, san-serif;
+    font-size: 1.5 rem;
+    3: 48 PM 16/05/2024 background-color: #bed;
+
+}
+
+h1 {
+
+    color: blue;
+
+}
+
+div.aspect-ratio {
+    display: inline-flex;
+    background-color: lime;
+    justify-content: center;
+}
+
+div.aspect-ratio {
+    width: 100px;
+    height: auto;
+}
+
+div.aspect-ratio:nth-child(1) {
+    aspect-ratio: 1/1;
+}
+
+div.aspect-ratio:nth-child(2) {
+    aspect-ratio: 0.5;
+}
+
+div.aspect-ratio:nth-child(3) {
+    aspect-ratio: 1;
+}
+
+div.aspect-ratio:nth-child(4) {
+    aspect-ratio: 1/0.5;
+}
+
+div.aspect-ratio:nth-child(5) {
+    aspect-ratio: 16/9;
+}

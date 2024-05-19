@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+    <title>Place: Banaue Rice Terraces, Philippines</title>
+    <meta
+      name="description"
+      content="Place Page: Banaue Rice Terraces, Philippines"
+    >
+    <meta name="author" content="James Phillip K. De Guzman" >
+    <link rel="stylesheet" href="styles/place-large.css" >
+    <link rel="stylesheet" href="styles/place-small.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Banaue Rice Terraces, Philippines</h1></header>
+    <div class="grid-container">
+    <main>
+
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/philippines-large.webp 1500w"
+            media="(min-width: 800px)" sizes="800px"
+          >
+          <source
+            srcset="images/philippines-medium.webp 1000w"
+            media="(min-width: 600px)" sizes="600px"
+          >
+          <source
+            srcset="images/philippines-small.webp 500w"
+            media="(min-width: 500px)" sizes="500px"
+          >
+          <img
+            src="images/philippines-large.webp"
+            alt="Country name: Philippines"
+            width="1500"
+            height="584"
+          >
+        </picture>
+        <section id="card1">
+          <h2 class="data-title">Data <img src="images/philippines_icon.svg" alt="data about the Philippines" width="24" height="24"></h2>
+          <!-- <h3 id="title-header">Data</h3> -->
+          <div class="data-box-1">
+            <div class="row">
+              <div class="col1">Area:</div>
+              <div class="col2">300,000 km²</div>
+            </div>
+            <div class="row">
+              <div class="col1">Population:</div>
+              <div class="col2">113,990,000</div>
+            </div>
+            <div class="row">
+              <div class="col1">Capital:</div>
+              <div class="col2">Manila</div>
+            </div>
+            <div class="row">
+              <div class="col1">Currency:</div>
+              <div class="col2">Philippine Peso</div>
+            </div>
+            <div class="row">
+              <div class="col1">Language:</div>
+              <div class="col2">Filipino, English</div>
+            </div>
+            <div class="row">
+              <div class="col1">Time Zone:</div>
+              <div class="col2">UTC+8:00 (PST)</div>
+            </div>
+            <div class="row">
+              <div class="col1">National Flower:</div>
+              <div class="col2">Sampaguita</div>
+            </div>
+            <div class="row">
+              <div class="col1">National Tree:</div>
+              <div class="col2">Narra</div>
+            </div>
+            <div class="row">
+              <div class="col1">National Bird:</div>
+              <div class="col2">Philippine Eagle</div>
+            </div>
+            <div class="row">
+              <div class="col1">ISO</div>
+              <div class="col2">PHL</div>
+            </div>
+
+            <div class="more-content">
+
+              <div class="row">
+                <div class="col1">Domain(TLD)</div>
+                <div class="col2">.ph</div>
+              </div>
+              <div class="row">
+                <div class="col1">Country code</div>
+                <div class="col2">+63</div>
+              </div>
+              <div class="row">
+                <div class="col1">Nationality</div>
+                <div class="col2">Filipino</div>
+              </div>
+              <div class="row">
+                <div class="col1">National Day</div>
+                <div class="col2">12 Jun 1898</div>
+              </div>
+
+            </div>
+            <a href="#" id="show-more">More</a>
+          </div>
+        </section>
+
+
+
+        <section id="card2">
+          <h2 class="data-title">Weather <img src="images/weather_clouds_sun_sunny_icon.svg" alt="sunny and/or cloudy weather" width="32" height="32"></h2>
+          <!-- <h3 id="title-header">Weather</h3> -->
+          <div class="data-box-2">
+            <div class="row">
+              <div class="col1">Temperature:</div>
+              <div class="col2" id="temperature">32°C</div>
+            </div>
+            <div class="row">
+              <div class="col1">Weather Condition:</div>
+              <div class="col2">Cloudy</div>
+            </div>
+            <div class="row">
+              <div class="col1">Wind Speed:</div>
+              <div class="col2" id="wind-speed">18 km/h</div>
+            </div>
+            <div class="row">
+              <div class="col1">Wind Chill Factor:</div>
+              <div class="col2" id="wind-chill"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    </div>
+    <footer>
+      <p>
+        ©<span id="currentyear"></span> James Phillip De Guzman | Iloilo,
+        Philippines
+      </p>
+      <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>

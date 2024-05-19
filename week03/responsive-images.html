@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="James Phillip De Guzman">
+<meta name="description" content="Responsive images example">
+<head>
+<title>Responsive Images</title>
+<link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+<main class="hero">
+<div class="divhero">
+<h1>Responsive Images Example</h1>
+<picture>
+  <source media="(min-width: 1000px)" srcset="images/manila-temple-large.webp 1500w">
+  <source media="(min-width: 500px)" srcset="images/manila-temple-medium.webp 1000w">
+  <img src="images/manila-temple-small.webp" alt="Picture of a beautiful landscape" width="500" height="250">
+</picture>
+</div>
+</main>
+
+<div class="aspect-ratio">1/1</div>
+<div class="aspect-ratio">0.5</div>
+<div class="aspect-ratio">1</div>
+<div class="aspect-ratio">1/0.5</div>
+<div class="aspect-ratio">16/9</div>
+
+</body>
+</html>

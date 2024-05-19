@@ -1,0 +1,121 @@
+:root {
+    --bord: 1px solid #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 760px;
+    height: 500px;
+    background-color: #eee;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+
+
+}
+
+main > p::first-line {
+    color: firebrick;
+    font-variant: small-caps;
+}
+
+
+
+p:first-child {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: aquamarine;
+    padding: 1rem;
+}
+
+.datatable {
+
+    width: 200px;
+    margin: 10px auto;
+    grid-row: 1;
+    grid-column: 2;
+    background-color: #fff;
+
+
+
+}
+
+p:last-child {
+    grid-row: 3;
+    grid-column: 2;
+    background-color: aqua;
+    padding: 1rem;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: navy;
+
+}
+
+a:hover {
+    color: purple;
+}
+
+
+
+.row {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.row:last-child {
+    border-bottom: var(--bord);
+    background-color: #bbb;
+}
+
+.col1 {
+
+    padding: 1rem;
+    border-top: var(--bord);
+    border-left: var(--bord);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-color: #fff;
+
+
+
+}
+
+.col2 {
+
+    padding: 1rem;
+    border-top: var(--bord);
+    border-left: var(--bord);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    border-color: #fff;
+
+
+
+}
+.col:nth-child(even) {
+    border-right: var(--bord);
+}

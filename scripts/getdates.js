@@ -5,3 +5,4 @@ const year = document.querySelector("#currentyear");
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
 
+
