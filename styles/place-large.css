@@ -36,7 +36,8 @@
 
     #title-header-weather::after {
         /* display: block; */
-        content: url("/images/weather_clouds_sun_sunny_icon.svg");
+        /* content: url("/images/weather_clouds_sun_sunny_icon.svg"); */
+        content: '⛅';
         display: block;
         width: 32px;
         height: 32px;
@@ -59,7 +60,7 @@
         max-width: 100%;
         margin: 0 30px;
         color: black;
-        
+
 
     }
 
