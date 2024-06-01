@@ -112,9 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
         row.className = 'row';
         // row.style.backgroundColor = '#bed';
         row.style.display = 'flex';
-        row.style.flex = '0 0 100px';
+        row.style.flex = '1 1 auto';
         row.style.flexDirection = 'row';
-        row.style.maxWidth = '500px';
+        row.style.maxWidth = '330px';
 
 
 
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dataBox.appendChild(createRows('Title: ', portfolio.fileName));
             dataBox.appendChild(createRows('Description: ', portfolio.description));
             dataBox.appendChild(createRows('Image: ', portfolio.sourceImg));
-            dataBox.appendChild(createRows('ImageURL: ', portfolio.imageURL));
+            // dataBox.appendChild(createRows('ImageURL: ', portfolio.imageURL));
 
 
             const card = document.createElement('div');
@@ -173,15 +173,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             card.style.display = 'flex';
             card.style.flexDirection = 'row';
-            card.style.margin = '0 50px';
+            card.style.margin = '0 auto';
+            card.style.lineHeight = '30px';
             card.style.height = 'auto';
             card.style.marginBottom = '20px';
             card.style.fontFamily = 'Arial, Helvetica, sans-serif';
             card.style.justifyContent = 'center';
             card.style.alignItems = 'center';
-            card.style.marginTop = '100px';
+            card.style.marginTop = '20px';
 
-            card.style.maxWidth = '100vw';
+            card.style.maxWidth = '90vw';
             card.style.gap = '30px';
             card.style.fontSize = '0.9rem';
             card.style.backgroundColor = 'rgba(0,0,0,0.1)';
@@ -195,22 +196,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
             loadIt.appendChild(card);
             loadIt.style.display = 'flex';
-            loadIt.style.marginBottom = '50px';
+            // loadIt.style.marginBottom = '50px';
             loadIt.style.maxWidth = '100%';
-            loadIt.style.overflow = 'hidden';
+            // loadIt.style.overflow = 'hidden';
             loadIt.style.height = 'auto';
 
-            if (window.innerWidth >= 940) {
-                loadIt.style.gridTemplateColumns = 'repeat(auto-fill, minMax(250px, 1fr))';
-            }
-            else {
-                loadIt.style.gridTemplateColumns = 'repeat(3, 1fr)';
-            }
+            // if (window.innerWidth >= 940) {
+            //     // loadIt.style.gridTemplateColumns = 'repeat(auto-fill, minMax(250px, 1fr))';
+            // }
+            // else {
+            //     loadIt.style.gridTemplateColumns = 'repeat(auto-fill, minMax(250px, 1fr))';
+            //     loadIt.style.gridTemplateColumns = '1fr';
+            // }
 
 
             // loadIt.style.gridTemplateRows = 'repeat(2, auto)';
-            loadIt.style.maxWidth = '100vw';
-            loadIt.style.justifyContent = 'space-around';
+            // loadIt.style.maxWidth = '100vw';
+            loadIt.style.justifyContent = 'center';
+            loadIt.style.alignItems = 'center';
+            loadIt.style.textAlign = 'center';
 
         });
 
