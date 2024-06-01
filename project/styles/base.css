@@ -67,7 +67,7 @@ body {
 
 .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     /* background-color: var(--carmine); */
     background-color: #931621ff;
@@ -90,9 +90,14 @@ body {
 
 }
 
+.navigation a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
 .navigation a:hover {
     text-decoration: none;
-    background-color: #28464bff;
+    border-bottom: 2px solid yellow;
     border-radius: 4px;
     transition: background-color 0.5s ease;
     /* color: #fff; */
@@ -103,8 +108,8 @@ body {
     list-style-type: none;
     justify-content: center;
     align-content: center;
-    padding: 10px 10px;
-    flex: 1 1 auto;
+    padding: 5px 20px;
+    flex: 0 1 auto;
 
 
 }
@@ -118,13 +123,13 @@ body {
 .signup-btn {
     font-family: Roboto, Arial, sans-serif;
     padding: 10px 20px;
-    background-color: #28464bff;
+    background-color: rebeccapurple;
     color: whitesmoke;
     border-radius: 5px;
-    margin: 10px 15px;
+    margin: 35px 45px;
     height: auto;
     max-width: 88px;
-    flex: 1 0 auto;
+    flex: 1 0 10%;
 
 }
 
@@ -133,7 +138,7 @@ body {
     border: 0;
     position: absolute;
     top: 10px;
-    right: 320px;
+    right: 50px;
     color: whitesmoke;
     background: none;
     flex: 1 1 auto;
@@ -200,8 +205,9 @@ header {
 
 .logo {
 
-    flex: 1 1 20%;
-    padding: 0 10px;
+    flex: 0 1 10%;
+    width: 100px;
+    height: 100px;
 
 }
 
@@ -232,15 +238,17 @@ span#color2 {
 
 }
 
-.top-section,
+.hero,
 .bottom-section {
     /* font-family: var(--secondary-font); */
+
     font-family: Poppins, sans-serif;
     font-size: 0.8rem;
 
 }
 
-.top-section {
+.hero {
+    position: relative;
     text-align: center;
     padding: 50px 0;
     background-color: #28464bff;
@@ -248,6 +256,29 @@ span#color2 {
     border-radius: 5px;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.image-container img {
+    display: block;
+
+
+}
+
+.image-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+
+
+
+}
 
 
 .layout-section  {
@@ -257,7 +288,7 @@ span#color2 {
 }
 
 .layout-section img,
-.top-section img {
+.hero img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -280,16 +311,24 @@ span#color2 {
 }
 
 .layout-section a:hover {
-    text-decoration: underline;
+
+    border-bottom: 2px solid yellow;
 }
 
 .title {
-    color: #28464bff;
-    font-size: medium;
+    color: blue;
+    font-size: large;
+    /* margin-bottom: 20px; */
+    padding-bottom: 15px;
+    text-align: center;
+
 }
 
-.title, .desc {
+.desc {
     margin-bottom: 10px;
+    text-align: center;
+    color: rgb(63, 62, 61);
+    padding-bottom: 15px;
 }
 
 .bottom-section {
@@ -298,11 +337,12 @@ span#color2 {
 
 .bottom-section ul {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .bottom-section li {
     list-style: none;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .bottom-section li a {
@@ -310,9 +350,55 @@ span#color2 {
 }
 
 .bottom-section li a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid yellow;
 }
 
+.wireframe {
+    background-color: #931621ff;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.wireframe a {
+    color: white;
+}
+
+
+.wireframe a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.wireframe a:hover {
+    color: white;
+    border-bottom: 3px solid yellow;
+    border-radius: 5px;
+}
+
+.back {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #931621ff;
+    border-radius: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.back a {
+    color: white;
+}
+.back a:hover {
+    color: white;
+    border-bottom: 2px solid yellow;
+    border-radius: 5px;
+}
+
+
+.back a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
 
 
 article {
@@ -332,7 +418,7 @@ footer {
     color: whitesmoke;
     /* font-family: var(--primary-font); */
     font-family: Roboto, Arial, sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .footer-wrapper  {
