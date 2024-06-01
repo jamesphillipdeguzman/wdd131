@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             card.appendChild(dataBox);
-            card.appendChild(img);
+            // card.appendChild(img);
             //currentImages.push(img); //store reference to the newly loaded image
 
             loadIt.appendChild(card);
