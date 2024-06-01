@@ -432,7 +432,99 @@ footer {
 }
 
 
+/* ================== HOME PAGE ====================== */
 
+
+
+
+
+/* ================== ABOUT PAGE ====================== */
+
+
+
+
+/* ================== CONTACT ====================== */
+
+
+
+
+/* ================== PORTFOLIOS ====================== */
+
+@media screen and (min-width: 1390px) {
+
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 30px;
+
+
+
+
+    }
+
+
+    portfolio-items {
+        background-color: white;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease box-shadow 0.3 ease;
+        text-align: center;
+
+
+    }
+
+
+    portfolio-items:hover {
+        transform: scale(1.5);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+
+    portfolio-items img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .project-title {
+        text-align: center;
+    }
+
+    .project-desc {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .project-title {
+        text-align: center;
+    }
+
+    .project-desc {
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+}
 
 @media screen and (max-width: 1290px) {
 
