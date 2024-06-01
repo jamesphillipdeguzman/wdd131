@@ -35,7 +35,7 @@ h2 {
     text-align: center;
     margin: 10px auto;
     max-width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 }
 
@@ -170,7 +170,7 @@ nav ul {
 }
 
 
-/* figure {
+figure {
     margin: 0 auto;
 }
 
@@ -178,7 +178,7 @@ figcaption {
     font-size: 0.8rem;
     text-align: center;
 
-} */
+}
 
 
 
@@ -205,14 +205,16 @@ figcaption {
 
 main {
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(2, 230px);
-    grid-gap: 5px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(2, 130px); */
+    /* grid-gap: 5px; */
     align-items: center;
     justify-content: center;
     height: auto;
+
 
 
 }

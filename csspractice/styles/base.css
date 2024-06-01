@@ -12,14 +12,16 @@ body, html {
   flex: 1;
   flex-direction: row;
   flex-wrap: nowrap;
-
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 
 }
 
 .nav-links-wrapper {
   display: flex;
   justify-content: space-around;
-  width: 95%;
+  width: 50%;
 
 
 
@@ -53,7 +55,7 @@ nav.navlinks2 ul {
 }
 
 nav.navlinks1 a {
-	display: block;
+	display: inline-block;
 	padding: 10px 20px;
 }
 
@@ -76,9 +78,25 @@ a {
 
 }
 
-li:hover {
+.navlinks1 li:hover, .navlinks2 li:hover {
   background-color: orange; /* Change background color on hover */
   transition: background-color 0.3s ease;
+}
+
+.left-sidebar a,
+ .right-sidebar a {
+    padding: 0.9rem 50px;
+    line-height: auto;
+}
+
+.left-sidebar a:hover,
+.right-sidebar a:hover {
+
+  background-color: orange;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  height: auto;
+
 }
 
 
@@ -111,7 +129,7 @@ main > p{
   flex-direction: column;
 
   background-color: #ccc;
-  padding: 20px;
+  padding: 0;
 
 }
 
@@ -134,7 +152,7 @@ main > p{
   flex-direction: column;
 
   background-color: #ccc;
-  padding: 20px;
+  padding: 0;
 }
 
 aside {

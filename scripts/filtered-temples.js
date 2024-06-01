@@ -264,6 +264,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('filter-title').innerText = 'Home';
         document.querySelector('#imageContainer').innerHTML = '';
         loadImages(temples);
+        let babygender = 'boy';
+        const reveal = document.getElementById('reveal');
+        // reveal.textContent = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+        reveal.innerHTML = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
     });
 
     // Old link
@@ -272,6 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('filter-title').innerText = 'Old';
         document.querySelector('#imageContainer').innerHTML = '';
         loadImages(temples.filter(temple => parseInt(temple.year) < 1900));
+
     });
 
     // New link

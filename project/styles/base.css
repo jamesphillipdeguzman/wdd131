@@ -1,0 +1,432 @@
+:root {
+    /* CSS HEX COLORS */
+    --carmine: #931621ff;
+    --dark-slate-gray: #28464bff;
+    --faint-black: #464444;
+
+
+    /* FONTS */
+
+    --primary-font: Roboto, Arial, sans-serif;
+    --secondary-font: Poppins, sans-serif;
+
+
+}
+
+/* SET DEFAULTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================== BODY ====================== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 50vw;
+    margin: 0 auto;
+    /* background: url('/wdd131/project/images/site-planning.webp') no-repeat center top; */
+    /* background-color: var(--dark-slate-gray); */
+}
+
+/* Add my wireframe overlay here */
+/* body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url('/wdd131/project/images/siteplan-page.png') no-repeat center top; */
+    /* background-size: cover; */
+    /* background-size: 50%; */
+    /* Adjust opacity as needed */
+    /* opacity: 0.5; */
+    /* Allows interaction with elements underneath */
+    /* pointer-events: none; */
+    /* Ensures overlay or wireframe is on top */
+    /* z-index: 1000; */
+/* } */
+
+.page-wrap {
+    width: 100%;
+    /* background-color: var(--dark-slate-gray); */
+    background-color: #28464bff;
+
+    /* max-width: 80%; */
+}
+
+/* ================== NAVIGATION ====================== */
+
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--carmine); */
+    background-color: #931621ff;
+    flex: 1 1 60%;
+
+}
+
+
+
+.navigation a {
+    text-decoration: none;
+    padding: 0 5px;
+    margin: 0 10px;
+    margin-right: 40px;
+    color: #fff;
+    font-size: 0.9rem;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+
+
+}
+
+.navigation a:hover {
+    text-decoration: none;
+    background-color: #28464bff;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+    /* color: #fff; */
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 10px;
+    flex: 1 1 auto;
+
+
+}
+
+.navigation ul li {
+    flex: 1 1 auto;
+    align-items: center;
+
+}
+
+#signup-btn {
+    font-family: Roboto, Arial, sans-serif;
+    padding: 10px 20px;
+    background-color: #28464bff;
+    color: whitesmoke;
+    border-radius: 5px;
+    margin: 10px 10px;
+    height: auto;
+    width: auto;
+    flex: 1 0 auto;
+
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    position: absolute;
+    top: 10px;
+    right: 320px;
+    color: whitesmoke;
+    background: none;
+    flex: 1 1 auto;
+
+}
+
+
+#menu::before {
+    content: "☰";
+    /*hamburger menu icon */
+
+
+
+}
+
+#menu.open::before {
+    content: "X";
+    /*click to go back*/
+
+
+}
+
+.open a {
+    display: block;
+}
+
+
+/* ================== HEADER ====================== */
+
+h1 {
+    font-family: Roboto, Arial, sans-serif;
+    color: whitesmoke;
+}
+
+h2 {
+    background-color: #28464bff;
+    color: whitesmoke;
+}
+
+h3 {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+header {
+    /* background-color: var(--carmine); */
+    display: flex;
+    justify-content: space-around;
+    background-color: #931621ff;
+    /* padding: 10px; */
+    text-align: center;
+    color: whitesmoke;
+    /* font-family: var(--primary-font); */
+    font-family: Roboto, Arial, san-serif;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+}
+
+.logo {
+
+    flex: 1 1 20%;
+    padding: 0 10px;
+
+}
+
+/* ================== MAIN ====================== */
+
+main {
+
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    max-width: 78%;
+    margin-bottom: 10px;
+
+
+}
+
+main > p {
+    color: #464444;
+}
+
+span#color1{
+    color: #931621ff;
+
+}
+
+span#color2 {
+    color: #28464bff;
+
+}
+
+.top-section,
+.bottom-section {
+    /* font-family: var(--secondary-font); */
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+
+}
+
+.top-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #28464bff;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.layout-section  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.layout-section h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.layout-section a {
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.layout-section a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    color: #28464bff;
+    font-size: medium;
+}
+
+.title, .desc {
+    margin-bottom: 10px;
+}
+
+.bottom-section {
+    border-radius: 5px;
+}
+
+.bottom-section ul {
+    margin-bottom: 10px;
+}
+
+.bottom-section li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.bottom-section li a {
+    text-decoration: none;
+}
+
+.bottom-section li a:hover {
+    text-decoration: underline;
+}
+
+
+
+article {
+    background-color: #eee;
+}
+
+
+/* ================== FOOTER ====================== */
+
+
+footer {
+
+
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    /* font-family: var(--primary-font); */
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 0.7rem;
+}
+
+.footer-wrapper  {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.footer-text {
+    color: #464444;
+}
+
+@media screen and (min-width: 1115px) {
+
+    #menu::before {
+        content: "☰";
+        /*hamburger menu icon */
+
+    }
+
+    #menu.open::before {
+        content: "X";
+        /*click to go back*/
+
+    }
+
+    .open a {
+        display: none;
+    }
+
+
+
+    #menu {
+        color: whitesmoke;
+        /* margin-right: auto; */
+        align-self: flex-start;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1290px) {
+    .navigation ul,
+    #signup-btn {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+
+    }
+
+    .navigation {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+   .navigation ul {
+       flex-direction: column;
+       margin-left: 30px;
+
+   }
+
+
+    #signup-btn {
+        max-width: 100px;
+        align-self: center;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    /* Show navigation on smaller screen sizes */
+
+        .navigation ul,
+        #signup-btn {
+            display: flex;
+        }
+
+
+        #menu {
+            display: none;
+        }
+
+}
+
+@media screen and (max-width: 500px) {
+    /* Show navigation on bigger screen sizes */
+
+    .navigation ul,
+    #signup-btn {
+        display: none;
+    }
+
+
+    #menu {
+        display: block;
+    }
+
+    /* .open .navigation ul,
+    .open #signup-btn {
+        display: flex;
+    } */
+
+
+}
