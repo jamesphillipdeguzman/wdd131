@@ -163,6 +163,9 @@ document.addEventListener('DOMContentLoaded', () => {
             dataBox.appendChild(createRows('Title: ', portfolio.fileName));
             dataBox.appendChild(createRows('Description: ', portfolio.description));
             dataBox.appendChild(createRows('Image: ', portfolio.sourceImg));
+            dataBox.style.margin = '10px 10px';
+            dataBox.style.padding = '10px 10px';
+            dataBox.style.maxWidth = '305px';
             // dataBox.appendChild(createRows('ImageURL: ', portfolio.imageURL));
 
 
@@ -174,16 +177,16 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.display = 'flex';
             card.style.flexDirection = 'row';
             card.style.margin = '0 auto';
-            card.style.lineHeight = '30px';
+            card.style.lineHeight = '25px';
             card.style.height = 'auto';
-            card.style.marginBottom = '20px';
+            card.style.marginBottom = '30px';
             card.style.fontFamily = 'Arial, Helvetica, sans-serif';
             card.style.justifyContent = 'center';
             card.style.alignItems = 'center';
-            card.style.marginTop = '20px';
+            card.style.marginTop = '30px';
 
-            card.style.maxWidth = '90vw';
-            card.style.gap = '30px';
+            card.style.maxWidth = '80vw';
+            card.style.gap = '5px';
             card.style.fontSize = '0.9rem';
             card.style.backgroundColor = 'rgba(0,0,0,0.1)';
             card.style.borderRadius = '6px';
@@ -196,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             loadIt.appendChild(card);
             loadIt.style.display = 'flex';
-            // loadIt.style.marginBottom = '50px';
+            loadIt.style.margin = '0 10px';
             loadIt.style.maxWidth = '100%';
             // loadIt.style.overflow = 'hidden';
             loadIt.style.height = 'auto';
