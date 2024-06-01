@@ -8,13 +8,13 @@
 
     }
 
-    
+
     #menu {
         display: none;  /*hide the hamburger*/
 
     }
 
-
+ 
     .navigation {
         flex-direction: row;
 
