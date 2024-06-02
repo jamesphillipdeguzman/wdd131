@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.querySelector('#signup-form');
     signupForm.addEventListener('submit', (event) => {
         // Prevent the default form submission behavior
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Redirect to the thanks page
         window.location.href = 'thanks.html';
     });
-});
+
 
 
 
