@@ -42,17 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    const signupForm = document.querySelector('#signup-form');
-    signupForm.addEventListener('submit', (event) => {
-        // Prevent the default form submission behavior
-        event.preventDefault();
-        // Redirect to the thanks page
-        window.location.href = 'thanks.html';
-    });
-
-
-
-
 
     // Declare an array object
 
@@ -244,6 +233,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+
+    // const signupForm = document.querySelector('#signup-form');
+    // signupForm.addEventListener('submit', (event) => {
+    //     // Prevent the default form submission behavior
+    //     event.preventDefault();
+    //     // Redirect to the thanks page
+    //     window.location.href = 'thanks.html';
+    // });
+
+
     const signupBtn = document.querySelector('.signup-btn');
     signupBtn.addEventListener('click', () => {
         // open the contacts page when user clicks on signup button
@@ -251,18 +250,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-
+    const results = document.querySelector('#results');
 // Listen when the user clicks the select button after choosing a portfolio
     selectPorftolioBtn.addEventListener('click', () => {
 
         // Check if user selected anything
         if (dropdownValue == '') {
-           choice.textContent = `Please choose a portfolio from the list`;
+            choice.textContent = `Please choose a portfolio from the list`;
+            results.textContent = ``;
+            clearImages();
 
         }
         else {
 
-
+            results.textContent = `Results`;
              choice.textContent = `You've chosen ${dropdownValue}.`;
             loadImages(portfolios.filter(portfolio => portfolio.pTitle === dropdownValue));
 

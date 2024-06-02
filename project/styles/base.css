@@ -713,6 +713,10 @@ footer {
         padding: 0 10px;
     }
 
+    #results {
+        font-size: large;
+        font-weight: bold;
+    }
 }
 
 
@@ -843,6 +847,11 @@ footer {
         height: auto;
         max-width: 90px;
         flex: 1 0 10%;
+    }
+
+    #results {
+        font-size: medium;
+        font-weight: bold;
     }
 
 }
