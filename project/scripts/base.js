@@ -166,8 +166,17 @@ document.addEventListener('DOMContentLoaded', () => {
             dataBox.style.margin = '10px 10px';
             dataBox.style.padding = '10px 10px';
             dataBox.style.maxWidth = '305px';
-            // dataBox.appendChild(createRows('ImageURL: ', portfolio.imageURL));
 
+            // Create the anchor element for imageURL
+            const a = document.createElement('a');
+            a.className = 'pImageUrl';
+            a.href = portfolio.imageURL;
+            a.textContent = `here`;
+
+
+            const imageURLRow = createRows('ImageURL:', '');
+            imageURLRow.lastChild.appendChild(a);
+            dataBox.appendChild(imageURLRow);
 
             const card = document.createElement('div');
             card.className = 'card';
@@ -221,7 +230,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         });
 
+
     }
+
+
+    const signupBtn = document.querySelector('.signup-btn');
+    signupBtn.addEventListener('click', () => {
+        // open the contacts page when user clicks on signup button
+        window.location.href = 'contact.html';
+
+    });
 
 
 // Listen when the user clicks the select button after choosing a portfolio
@@ -234,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else {
 
-            // loadImages(filteredPortfolios);
+
              choice.textContent = `You've chosen ${dropdownValue}.`;
             loadImages(portfolios.filter(portfolio => portfolio.pTitle === dropdownValue));
 
@@ -244,6 +262,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Call the function that loads the images
     // loadImages(portfolios);
+
+
 
 
 });

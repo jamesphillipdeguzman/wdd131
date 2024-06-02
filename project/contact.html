@@ -20,6 +20,7 @@
 <div class="page-wrap">
 
 <header>
+    <p id="window-size"></p>
 
     <nav class="navigation">
 
@@ -53,8 +54,23 @@
     </div>
 
     <div class="bottom-section">
+        <h2>Enter your contact details</h2>
 
-        <h2>Sorry, under construction...</h2>
+        <form action="submit" method="get">
+            <div class="contact-section">
+                <label for="fname">Name*<input type="text" id="fname" name="fname" required></label>
+                <label for="mobile">Mobile
+                    <input type="tel" id="mobile">
+                </label>
+                <label for="telephone">Telephone
+                    <input type="tel" id="telephone">
+                </label>
+                <label for="email">Email*
+                    <input type="email" id="email" required>
+                </label>
+                <button id="submit">Sign me up</button>
+            </div>
+        </form>
 
     </div>
 

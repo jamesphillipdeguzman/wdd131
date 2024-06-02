@@ -442,20 +442,178 @@ footer {
 
 
 
-/* ================== HOME PAGE ====================== */
+/* ================== HOME MEDIA QUERIES ====================== */
+
+@media (min-width:501px) and (max-width: 1900px) {
+
+    .image-container #hero-logo {
+        margin-top: 200px;
+    }
+
+    .bottom-section .my-company {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 0 auto;
+
+
+    }
+}
+
+/* Media query for SMALL window resizing range */
+@media (min-width: 311px) and (max-width: 500px) {
+    .image-container #hero-logo {
+        margin-top: 200px;
+    }
+
+    .bottom-section .my-company {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 0 auto;
+
+
+    }
+
+
+}
 
 
 
+/* ================== ABOUT MEDIA QUERIES ====================== */
+@media (min-width:501px) and (max-width: 1900px) {
+
+    .image-container #hero-pic {
+        margin-top: 200px;
+    }
+    .bottom-section .my-profile {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 0 auto;
 
 
-/* ================== ABOUT PAGE ====================== */
+    }
+}
+
+/* Media query for SMALL window resizing range */
+@media (min-width: 311px) and (max-width: 500px)
+{
+    .image-container #hero-pic {
+            margin-top: 200px;
+        }
+
+        .bottom-section .my-profile {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 0;
+            text-align: center;
+            margin: 0 auto;
 
 
+        }
 
 
-/* ================== CONTACT ====================== */
+}
 
+/* ================== CONTACT MEDIA QUERIES ====================== */
 
+/* Media query for LARGE window resizing range */
+@media (min-width:501px) and (max-width: 1900px) {
+    .bottom-section h2 {
+        margin: 10px auto;
+    }
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        margin: 1rem auto;
+        gap: 10px;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 1rem;
+        background-color: #bed;
+        align-items: center;
+        margin: 5px;
+        padding: 5px 0;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .contact-section label {
+        margin: 5px 0;
+        padding: 2px 0;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+
+    }
+
+    .contact-section #submit {
+        font-family: Roboto, Arial, sans-serif;
+        padding: 10px 20px;
+        background-color: rebeccapurple;
+        color: whitesmoke;
+        border-radius: 5px;
+        margin: 20px auto;
+        height: auto;
+        max-width: 120px;
+        flex: 1 0 10%;
+
+    }
+
+}
+
+/* Media query for SMALL window resizing range */
+@media (min-width: 311px) and (max-width: 500px) {
+
+    .bottom-section h2 {
+            margin: 10px auto;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 300px;
+            margin: 1rem auto;
+            gap: 10px;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 1rem;
+            background-color: #bed;
+            align-items: center;
+            margin: 5px;
+            padding: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-section label {
+            margin: 5px 0;
+            padding: 2px 0;
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+
+        }
+
+        .contact-section #submit {
+            font-family: Roboto, Arial, sans-serif;
+            padding: 10px 20px;
+            background-color: rebeccapurple;
+            color: whitesmoke;
+            border-radius: 5px;
+            margin: 20px auto;
+            height: auto;
+            max-width: 120px;
+            flex: 1 0 10%;
+
+        }
+
+}
 
 
 /* ================== PORTFOLIOS MEDIA QUERIES ====================== */
@@ -489,7 +647,7 @@ footer {
         border-radius: 5px;
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-        transition: transform 0.4s ease box-shadow 0.3 ease;
+        transition: transform 0.4s ease;
         z-index: 1;
 
     }
@@ -552,7 +710,7 @@ footer {
         font-family: Roboto, Arial, sans-serif;
         border-radius: 5px;
         margin: 0 auto;
-        padding: auto 10px;
+        padding: 0 10px;
     }
 
 }
@@ -620,7 +778,7 @@ footer {
         border-radius: 5px;
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        transition: transform 0.4s ease box-shadow 0.3 ease;
+        transition: transform 0.4s ease;
         z-index: 1;
         margin: 30px auto;
 
