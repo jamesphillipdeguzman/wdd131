@@ -14,6 +14,7 @@ hamburgerBtn.addEventListener('click', () => {
 
 });
 
+
 // Make sure everything is loaded/initialized first
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -40,6 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const signupForm = document.querySelector('#signup-form');
+    signupForm.addEventListener('submit', (event) => {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+        // Redirect to the thanks page
+        window.location.href = 'thanks.html';
+    });
+});
 
 
 
