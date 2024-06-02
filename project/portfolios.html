@@ -25,10 +25,10 @@
 
         <div class="logo"><img src="images/besys-tech-logo.svg" alt="company logo" width="100" height="100"></div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="portfolios.html">Portfolios</a></li>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="about.html" id="about">About</a></li>
+            <li><a href="contact.html" id="contact">Contact</a></li>
+            <li><a href="portfolios.html" id="portfolio" class="active">Portfolios</a></li>
 
         </ul>
         <button id="menu" aria-label="menu"></button>
@@ -84,12 +84,23 @@
                     </div>
                     <div class="picturediv">
                         <a href="https://jamesphillipdeguzman.github.io/wdd131/place.html">
-                            <img
-                                src="images/project-images/portfolio-1.webp"
-                                alt="Portfolio 1: place.html"
-                                width="300"
-                                height="200"
-                                loading="lazy">
+                            <picture>
+                                <source
+                                    srcset="images/project-images/portfolio-1.webp 1900w"
+                                    media="(min-width: 600px)"
+                                    sizes="(min-width: 600px) 600px, 100vw">
+                                <source
+                                    srcset="images/project-images/portfolio-1-small.webp 500w"
+                                    media="(min-width: 599px)"
+                                    sizes="(min-width: 599px) 500px, 100vw">
+                                <img
+                                    src="images/project-images/portfolio-1-small.webp"
+
+                                    alt="Portfolio 1: place.html"
+                                    width="300"
+                                    height="200"
+                                    loading="lazy">
+                            </picture>
                         </a>
                     </div>
                     <div class="descdiv">
@@ -106,6 +117,14 @@
                     </div>
                     <div class="picturediv">
                         <a href="https://jamesphillipdeguzman.github.io/wdd131/index.html">
+                            <source
+                                srcset="images/project-images/portfolio-2.webp 1900w"
+                                media="(min-width: 600px)"
+                                sizes="(min-width: 600px) 600px, 100vw">
+                            <source
+                                srcset="images/project-images/portfolio-2-small.webp 500w"
+                                media="(min-width: 599px)"
+                                sizes="(min-width: 599px) 500px, 100vw">
                             <img
                                 src="images/project-images/portfolio-2.webp"
                                 alt="Portfolio 2: index.html"
@@ -128,6 +147,14 @@
                     </div>
                     <div class="picturediv">
                         <a href="https://jamesphillipdeguzman.github.io/wdd131/filtered-temples.html">
+                            <source
+                                srcset="images/project-images/portfolio-3.webp 1900w"
+                                media="(min-width: 600px)"
+                                sizes="(min-width: 600px) 600px, 100vw">
+                            <source
+                                srcset="images/project-images/portfolio-3-small.webp 500w"
+                                media="(min-width: 599px)"
+                                sizes="(min-width: 599px) 500px, 100vw">
                             <img
                                 src="images/project-images/portfolio-3.webp"
                                 alt="Portfolio 3: "
@@ -149,6 +176,14 @@
                     </div>
                     <div class="picturediv">
                         <a href="https://jamesphillipdeguzman.github.io/wdd131/temples.html">
+                            <source
+                                srcset="images/project-images/portfolio-4.webp 1900w"
+                                media="(min-width: 600px)"
+                                sizes="(min-width: 600px) 600px, 100vw">
+                            <source
+                                srcset="images/project-images/portfolio-4-small.webp 500w"
+                                media="(min-width: 599px)"
+                                sizes="(min-width: 599px) 500px, 100vw">
                             <img
                                 src="images/project-images/portfolio-4.webp"
                                 alt="Portfolio 4: "
@@ -170,6 +205,14 @@
                     </div>
                     <div class="picturediv">
                         <a href="https://jamesphillipdeguzman.github.io/wdd131/csspractice/holy-grail-layout-flex.html">
+                            <source
+                                srcset="images/project-images/portfolio-5.webp 1900w"
+                                media="(min-width: 600px)"
+                                sizes="(min-width: 600px) 600px, 100vw">
+                            <source
+                                srcset="images/project-images/portfolio-5-small.webp 500w"
+                                media="(min-width: 599px)"
+                                sizes="(min-width: 599px) 500px, 100vw">
                             <img
                                 src="images/project-images/portfolio-5.webp"
                                 alt="Portfolio 5: "
@@ -191,6 +234,14 @@
                     </div>
                     <div class="picturediv">
                         <a href="https://jamesphillipdeguzman.github.io/wdd130/wwr/index.html">
+                            <source
+                                srcset="images/project-images/portfolio-6.webp 1900w"
+                                media="(min-width: 600px)"
+                                sizes="(min-width: 600px) 600px, 100vw">
+                            <source
+                                srcset="images/project-images/portfolio-6-small.webp 500w"
+                                media="(min-width: 599px)"
+                                sizes="(min-width: 599px) 500px, 100vw">
                             <img
                                 src="images/project-images/portfolio-6.webp"
                                 alt="Portfolio 6: "
@@ -223,7 +274,11 @@
 
         <div class="footer-text">
         &copy;<span id="currentyear"></span> James Phillip K. De Guzman <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
-        </div>
+
+    <!-- Show number of searches here and date-->
+            <p>Search Count: <span id="search"></span></p>
+            <p> Date: <span id="today"></span></p>
+    </div>
 
         <div class="social-links">
             <a href="https://www.facebook.com/diet.deguzman">

@@ -1,3 +1,8 @@
+
+// ----------------------------INITIALIZE DOM HERE ------------------------------- //
+// Make sure everything is loaded/initialized first
+document.addEventListener('DOMContentLoaded', () => {
+
 document.getElementById("lastModified").innerHTML = document.lastModified;
 // use the date object
 const today = new Date();
@@ -15,14 +20,43 @@ hamburgerBtn.addEventListener('click', () => {
 });
 
 
-// Make sure everything is loaded/initialized first
-document.addEventListener('DOMContentLoaded', () => {
+    // Define local storage here
+    function lsStorage() {
+        // initialize display elements
+        const todayDisplay = document.querySelector('#today');
+        const searchDisplay = document.querySelector('#search');
+
+        // get the stored value in localStorage
+        let numSearch = Number(window.localStorage.getItem('search-ls'));
+
+        //determine if this is the first search
+        if(numSearch !== 0) {
+        searchDisplay.textContent = numSearch;
+        } else {
+        searchDisplay.textContent = `Welcome to our site!`;
+        }
+
+        numSearch++;
+
+        // store new number of visits
+        localStorage.setItem('search-ls', numSearch);
+
+        //show today's date
+        todayDisplay.textContent = Date.now();
+    }
 
     // Target the elements first
     const selectPorftolioBtn = document.querySelector('#portfolio-btn');
     const dropdownContainer = document.querySelector('.dropdown-container select');
     const choice = document.querySelector('#choose');
     const loadIt = document.querySelector('.image-loader');
+    const signupBtn = document.querySelector('.signup-btn');
+
+    signupBtn.addEventListener('click', () => {
+        // open the contacts page when user clicks on signup button
+        window.location.href = 'signup.html';
+
+    });
 
     // Initialize dropdown value to nothing
     let dropdownValue = '';
@@ -40,6 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
         chosenPortfolio = choice.value;
 
     });
+
+
+
+
+
 
 
 
@@ -243,12 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // });
 
 
-    const signupBtn = document.querySelector('.signup-btn');
-    signupBtn.addEventListener('click', () => {
-        // open the contacts page when user clicks on signup button
-        window.location.href = 'contact.html';
 
-    });
 
     const results = document.querySelector('#results');
 // Listen when the user clicks the select button after choosing a portfolio
@@ -266,9 +300,11 @@ document.addEventListener('DOMContentLoaded', () => {
             results.textContent = `Results`;
              choice.textContent = `You've chosen ${dropdownValue}.`;
             loadImages(portfolios.filter(portfolio => portfolio.pTitle === dropdownValue));
+            lsStorage();
 
         }
     });
+
 
 
     // Call the function that loads the images
