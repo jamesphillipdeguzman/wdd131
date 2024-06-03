@@ -329,7 +329,7 @@ input[type="checkbox"].large-checkbox {
 
 
 #menu::before {
-    content: "X";
+    content: "☰";
     /*hamburger menu icon */
 
 
@@ -337,7 +337,7 @@ input[type="checkbox"].large-checkbox {
 }
 
 #menu.open::before {
-    content: "☰";
+    content: "X";
     /*click to go back*/
 
 
@@ -351,6 +351,7 @@ input[type="checkbox"].large-checkbox {
 
 .open ul {
     display: none;
+    /* color: #931621ff; */
 }
 
 
@@ -678,20 +679,28 @@ footer {
 }
 
 /* Media query for SMALL window resizing range */
-@media (min-width: 399px) and (max-width: 800px) {
+@media (min-width: 370px) and (max-width: 800px) {
     .my-profile h2{
         padding: 20px 0;
     }
 
+    /* .navigation {
+        width: 80%;
+        margin: 0 10px;
+        font-size: 0.8rem;
+    } */
     .navigation ul {
         display: block;
         margin: 10px 0;
         width: 100%;
         max-width: 300px;
+
     }
 
     .navigation ul a {
         font-size: 1.2rem;
+        
+
 
     }
 
@@ -766,7 +775,7 @@ footer {
 }
 
 /* Media query for SMALL window resizing range */
-@media (min-width: 399px) and (max-width: 800px)
+@media (min-width: 370px) and (max-width: 800px)
 {
     .image-container #hero-pic {
             margin-top: 200px;
@@ -852,16 +861,16 @@ footer {
 
     }
 
-        .navigation ul {
+        /* .navigation ul {
             width: 100%;
             max-width: 100vw;
             flex-wrap: nowrap;
-        }
+        } */
 
 }
 
 /* Media query for SMALL window resizing range */
-@media (min-width: 399px) and (max-width: 800px) {
+@media (min-width: 370px) and (max-width: 800px) {
 
     .bottom-section h2 {
             margin: 10px auto;
@@ -1031,7 +1040,7 @@ footer {
 
 
 /* Media query for SMALL window resizing range */
-@media (min-width: 399px) and (max-width: 800px) {
+@media (min-width: 370px) and (max-width: 800px) {
 
     body {
         max-width: 100vw;

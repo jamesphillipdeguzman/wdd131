@@ -51,7 +51,7 @@ hamburgerBtn.addEventListener('click', () => {
     const choice = document.querySelector('#choose');
     const loadIt = document.querySelector('.image-loader');
     const signupBtn = document.querySelector('.signup-btn');
-    const reviewBtn = document.querySelector('#review-btn');
+    // const reviewBtn = document.querySelector('#review-btn');
 
     if (signupBtn) {
 
@@ -63,13 +63,13 @@ hamburgerBtn.addEventListener('click', () => {
 
     }
 
-    if (reviewBtn) {
+    if (signupBtn) {
 
-        reviewBtn.addEventListener('click', () => {
+        signupBtn.addEventListener('click', () => {
 
 
             // open the review page when user clicks on review button
-            window.location.href = 'project/review.html';
+            window.location.href = 'project/signup.html';
 
         });
     }
