@@ -51,12 +51,31 @@ hamburgerBtn.addEventListener('click', () => {
     const choice = document.querySelector('#choose');
     const loadIt = document.querySelector('.image-loader');
     const signupBtn = document.querySelector('.signup-btn');
+    const reviewBtn = document.querySelector('#review-btn');
 
-    signupBtn.addEventListener('click', () => {
-        // open the contacts page when user clicks on signup button
-        window.location.href = 'signup.html';
+    if (signupBtn) {
 
-    });
+        signupBtn.addEventListener('click', () => {
+            // open the contacts page when user clicks on signup button
+            window.location.href = 'signup.html';
+
+        });
+
+    }
+
+    if (reviewBtn) {
+        const signupBtn = document.querySelector('.signup-btn');
+
+        signupBtn.addEventListener('click', () => {
+
+
+            // open the review page when user clicks on review button
+            window.location.href = 'project/signup.html';
+
+        });
+    }
+
+
 
     // Initialize dropdown value to nothing
     let dropdownValue = '';

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Contact Page</title>
-<meta name="description" content="Contact page: Contact James De Guzman through mobile, phone and email">
+<title>Website Portfolio Homepage</title>
+<meta name="description" content="Home page: Landing page for my web portfolio site">
 <meta name="author" content="James Phillip K. De Guzman">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,6 @@
 <div class="page-wrap">
 
 <header>
-    <p id="window-size"></p>
 
     <nav class="navigation">
 
@@ -35,7 +34,7 @@
         </ul>
         <button id="menu" aria-label="menu"></button>
     </nav>
-    <button class="signup-btn">Sign up</button>
+    <button class="signup-btn">Sign Up</button>
 
 
 
@@ -48,25 +47,22 @@
 
     <div class="hero">
         <div class="image-container">
-            <h1>Be part of our growing community!</h1>
-            <img src="images/site-planning.svg" alt="picture of a notebook with wireframe sketches" width="200" height="100">
+            <h1 id="hero-logo">besys.tech</h1>
+            <img src="images/besys-tech-logo.svg" alt="picture of a notebook with wireframe sketches" width="200" height="100">
         </div>
 
     </div>
 
     <div class="bottom-section">
-        <h2>Enter your contact details</h2>
+        <article class="my-company">
+        <h2>Thank you!</h2>
+        <p> We will be contacting you very soon. </p>
 
-        <form action="thanks.html" method="get" id="signup-form">
-            <div class="contact-section">
-                <label for="fname">Name<input type="text" id="fname" name="fname" required></label>
-                <label for="email">Email
-                    <input type="email" id="email" required>
-                </label>
-                <button id="submit">Sign me up</button>
-            </div>
-        </form>
+        <!-- Show number of searches here and date-->
+            <!-- <p>Submission Count: <span id="search"></span></p> -->
+            <!-- <p> Date: <span id="today"></span></p> -->
 
+        </article>
     </div>
 
 </main>
