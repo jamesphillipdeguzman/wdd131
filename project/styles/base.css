@@ -79,7 +79,7 @@ body {
 
 }
 
-.active::before {
+.active::after {
     content: '📌';
     margin-right: 8px;
     color: white;
@@ -512,9 +512,36 @@ footer {
 }
 
 /* Media query for SMALL window resizing range */
-@media (min-width: 399px) and (max-width: 800px) {
+@media (min-width: 311px) and (max-width: 800px) {
+    .page-wrap {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            /* background-color: var(--dark-slate-gray); */
+            background-color: #28464bff;
+            align-content: center;
+            justify-content: center;
+            max-width: 100%;
+    }
     .my-profile h2{
         padding: 20px 0;
+    }
+    .navigation ul {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .navigation ul a {
+        font-size: 1.2rem;
+
+    }
+    .active::after {
+        content: '📌';
+        margin-right: 8px;
+        color: white;
+        /*wayfinding symbol for the user*/
     }
 
     .bottom-section .my-company {
@@ -581,7 +608,7 @@ footer {
 }
 
 /* Media query for SMALL window resizing range */
-@media (min-width: 399px) and (max-width: 800px)
+@media (min-width: 311px) and (max-width: 800px)
 {
     .image-container #hero-pic {
             margin-top: 200px;
@@ -676,7 +703,7 @@ footer {
 }
 
 /* Media query for SMALL window resizing range */
-@media (min-width: 399px) and (max-width: 800px) {
+@media (min-width: 311px) and (max-width: 800px) {
 
     .bottom-section h2 {
             margin: 10px auto;
@@ -846,7 +873,7 @@ footer {
 
 
 /* Media query for SMALL window resizing range */
-@media (min-width: 399px) and (max-width: 800px) {
+@media (min-width: 311px) and (max-width: 800px) {
 
     body {
         max-width: 100vw;

@@ -64,13 +64,12 @@ hamburgerBtn.addEventListener('click', () => {
     }
 
     if (reviewBtn) {
-        const signupBtn = document.querySelector('.signup-btn');
 
-        signupBtn.addEventListener('click', () => {
+        reviewBtn.addEventListener('click', () => {
 
 
             // open the review page when user clicks on review button
-            window.location.href = 'project/signup.html';
+            window.location.href = 'project/review.html';
 
         });
     }

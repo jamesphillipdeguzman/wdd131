@@ -245,7 +245,7 @@ input[type="checkbox"].large-checkbox {
 
 }
 
-.active::before {
+.active::after {
     content: '📌';
     margin-right: 8px;
     color: white;
@@ -681,6 +681,25 @@ footer {
 @media (min-width: 399px) and (max-width: 800px) {
     .my-profile h2{
         padding: 20px 0;
+    }
+
+    .navigation ul {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .navigation ul a {
+        font-size: 1.2rem;
+
+    }
+
+    .active::after {
+        content: '📌';
+        margin-right: 8px;
+        color: white;
+        /*wayfinding symbol for the user*/
     }
 
     .bottom-section .my-company {

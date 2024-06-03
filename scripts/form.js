@@ -36,58 +36,59 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  const selectProduct = document.querySelector('#dynamic-product'); // Fixed selector
+  const dynamicProduct = document.querySelector('.dynamic-product'); // Fixed selector
 
-  function populateDropdown(selectProduct, products) {
-    selectProduct.innerHTML = '<option value="" disabled selected>Select a product...</option>';
+  function populateDropdown(dynamicProduct, products) {
+    // dynamicProduct.innerHTML = '<option value="" disabled selected>Select a product...</option>';
     products.forEach(product => {
       const option = document.createElement('option');
-      option.className = 'selectProduct';
+      // option.id = 'dynamicProduct';
       option.value = product.id;
       option.textContent = product.name;
-      selectProduct.appendChild(option);
+      dynamicProduct.appendChild(option);
     });
   }
 
   // Populate the dropdown immediately when the DOM is loaded
-  populateDropdown(selectProduct, products);
+  populateDropdown(dynamicProduct, products);
 
   // Define local storage here
-  function lsStorage() {
+  function lsSubmitCount() {
     // initialize display elements
-    const searchDisplay = document.querySelector('#submit-count');
+    const submitDisplay = document.querySelector('#submit-count');
 
     // get the stored value in localStorage
     let numSubmit = Number(window.localStorage.getItem('submit-ls')) || 0;
 
     // determine if this is the first submission
     if (numSubmit !== 0) {
-      searchDisplay.textContent = numSubmit;
+      submitDisplay.textContent = numSubmit;
     } else {
-      searchDisplay.textContent = `Welcome to our site!`;
+      submitDisplay.textContent = `0`;
     }
 
     // store new number of submissions
     localStorage.setItem('submit-ls', numSubmit);
   }
 
-  lsStorage();
+  lsSubmitCount();
 
   const reviewBtn = document.querySelector('#review-btn');
 
   reviewBtn.addEventListener('click', () => {
     // Check if a product is selected
-    if (selectProduct.value === "") {
+    if (dynamicProduct.value === "") {
       alert("Please select a product before proceeding.");
     } else {
       // Update the submission count in local storage
       let numSubmit = Number(window.localStorage.getItem('submit-ls')) || 0;
       numSubmit++;
       localStorage.setItem('submit-ls', numSubmit);
-      lsStorage(); // Update the display
+      lsSubmitCount(); // Update the display
 
       // Open the review page when user clicks on review button
-      window.location.href = 'project/review.html';
+      // window.location.href = 'project/review.html';
     }
+
   });
 });
