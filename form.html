@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="styles/form.css">
 <link rel="stylesheet" href="project/styles/base-large.css">
 <script src="scripts/form.js" defer></script>
-<script src="project/scripts/base.js" defer></script>
+<!-- <script src="project/scripts/base.js" defer></script> -->
 </head>
 <body>
 
@@ -68,12 +68,14 @@
 
             <form action="review.html" method="get" id="review-form">
                 <fieldset class="form-group">
+
                     <label for="dynamic-product">Product Name</label>
 
                     <!-- Dynamic select dropdown list -->
                     <select id="dynamic-product" name="dynamic-product" required>
                         <option value="" disabled>Select a product...</option>
                     </select>
+                    <div id="select-error-message"></div>
 
 
                     <label for="stars">Overall Rating</label>
@@ -86,6 +88,7 @@
                         <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
                         <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                     </div>
+                    <div id="radio-error-message"></div>
 
                     <!-- Date Input -->
                     <div class="install-date">
@@ -93,6 +96,8 @@
                         <input type="date" id="date-installed" name="date-installed" required>
 
                     </div>
+
+                    <div id="date-error-message"></div>
 
                     <!-- Checkboxes -->
                     <div class="features">
@@ -121,6 +126,7 @@
 
                     <input type="submit" id="review-btn" value="Post a Review">
             </fieldset>
+
             </form>
 
 

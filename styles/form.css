@@ -228,7 +228,13 @@ input[type="checkbox"].large-checkbox {
     color: whitesmoke;
 }
 
-
+.errMsg {
+    color: red;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin: 5px 0 10px 0;
+    /* display: none; */
+}
 
 /* ================== NAVIGATION ====================== */
 

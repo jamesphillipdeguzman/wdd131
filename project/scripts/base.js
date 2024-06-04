@@ -67,7 +67,7 @@ hamburgerBtn.addEventListener('click', () => {
 
         reviewBtn.addEventListener('click', () => {
 
-            
+
             // open the review page when user clicks on review button
             window.location.href = 'project/review.html';
 
