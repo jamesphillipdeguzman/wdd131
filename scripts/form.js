@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  const dynamicProduct = document.querySelector('.dynamic-product'); // Fixed selector
+  const dynamicProduct = document.querySelector('#dynamic-product'); // Fixed selector
 
   function populateDropdown(dynamicProduct, products) {
-    // dynamicProduct.innerHTML = '<option value="" disabled selected>Select a product...</option>';
+    dynamicProduct.innerHTML = '<option value="" disabled selected>Select a product...</option>';
     products.forEach(product => {
       const option = document.createElement('option');
       // option.id = 'dynamicProduct';
@@ -75,10 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const reviewBtn = document.querySelector('#review-btn');
 
-  reviewBtn.addEventListener('click', () => {
-    // Check if a product is selected
-    if (dynamicProduct.value === "") {
+  reviewBtn.addEventListener('submit', (event) => {
+    const productSelected = dynamicProduct.value !== '';
+    const starsSelected = document.querySelector('input[name="stars"]:checked') !== null;
+    const dateSelected = document.querySelector('#date-installed').value !== '';
+
+    if (!productSelected || !starsSelected || !dateSelected) {
+      event.preventDefault();
       alert("Please select a product before proceeding.");
+
     } else {
       // Update the submission count in local storage
       let numSubmit = Number(window.localStorage.getItem('submit-ls')) || 0;

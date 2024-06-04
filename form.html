@@ -64,61 +64,65 @@
 
         <h2>besys.tech</h2>
         <div class="form-section">
-          <h3>Sample Product Review Form</h3>
-          <fieldset class="form-group">
+            <h3>Sample Product Review Form</h3>
+
             <form action="review.html" method="get" id="review-form">
-              <label for="dynamic-product">Product Name</label>
+                <fieldset class="form-group">
+                    <label for="dynamic-product">Product Name</label>
 
-              <!-- Dynamic select dropdown list -->
-              <select class="dynamic-product" name="dynamic-product" required>
-                <option value="" disabled selected>Select a product...</option>
-              </select>
+                    <!-- Dynamic select dropdown list -->
+                    <select id="dynamic-product" name="dynamic-product" required>
+                        <option value="" disabled>Select a product...</option>
+                    </select>
 
-              <label for="stars">Overall Rating</label>
 
-              <!-- Radio star buttons -->
-              <div class="stars-rating" id="stars">
-                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
-                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
-              </div>
+                    <label for="stars">Overall Rating</label>
 
-              <!-- Date Input -->
-              <div class="install-date">
-                <label for="date-installed">Date of Installation</label>
-                <input type="date" id="date-installed" name="date-installed" required>
+                    <!-- Radio star buttons -->
+                    <div class="stars-rating" id="stars">
+                        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                        <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                        <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                        <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                        <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                    </div>
 
-              </div>
+                    <!-- Date Input -->
+                    <div class="install-date">
+                        <label for="date-installed">Date of Installation</label>
+                        <input type="date" id="date-installed" name="date-installed" required>
 
-              <!-- Checkboxes -->
-              <div class="features">
+                    </div>
 
-                <p>Which features did you find useful in the product?</p>
-                <p id="italicize">(Check all that apply)</p>
-                <div class="wrap-checkbox">
-                  <label for="durability"><input type="checkbox" class="large-checkbox" id="durability" name="durability" value="durability">Durability</label>
-                  <label for="ease"><input type="checkbox" class="large-checkbox" id="ease" name="ease" value="ease">Ease of Use</label>
-                  <label for="performance"><input type="checkbox" class="large-checkbox" id="performance" name="performance" value="performance">Performance</label>
-                  <label for="design"><input type="checkbox" class="large-checkbox" id="design" name="design" value="design">Design</label>
-                </div>
-              </div>
+                    <!-- Checkboxes -->
+                    <div class="features">
 
-              <div class="review">
+                        <p>Which features did you find useful in the product?</p>
+                        <p id="italicize">(Check all that apply)</p>
+                        <div class="wrap-checkbox">
+                        <label for="durability"><input type="checkbox" class="large-checkbox" id="durability" name="features" value="durability">Durability</label>
+                        <label for="ease"><input type="checkbox" class="large-checkbox" id="ease" name="features" value="ease">Ease of Use</label>
+                        <label for="performance"><input type="checkbox" class="large-checkbox" id="performance" name="features" value="performance">Performance</label>
+                        <label for="design"><input type="checkbox" class="large-checkbox" id="design" name="features" value="design">Design</label>
+                        </div>
+                    </div>
 
-                <label for="written-review">Written Review <span class="optional">(Optional)</span>
-                <!-- Text area for written review -->
-                <textarea id="written-review" name="written-review"></textarea></label>
+                    <div class="review">
 
-                <!-- Textbox for name -->
-                <label for="fname">Name <span class="optional">(Optional)</span><input type="text"  id="fname" name="fname"></label>
-              </div>
+                        <label for="written-review">Written Review <span class="optional">(Optional)</span>
+                            <!-- Text area for written review -->
+                            <textarea id="written-review" name="written-review"></textarea></label>
 
-              <input type="submit" id="review-btn" value="Post a Review">
 
-            </form>
+                        <label for="fname">Name <span class="optional">(Optional)</span>
+                            <!-- Textbox for name -->
+                            <input type="text"  id="fname" name="fname"></label>
+                    </div>
+
+                    <input type="submit" id="review-btn" value="Post a Review">
             </fieldset>
+            </form>
+
 
 
         </div>
