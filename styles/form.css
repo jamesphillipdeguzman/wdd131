@@ -334,20 +334,17 @@ input[type="checkbox"].large-checkbox {
 }
 
 
+/*
 #menu::before {
-    content: "☰";
-    /*hamburger menu icon */
-
-
-
-}
-
-#menu.open::before {
     content: "X";
-    /*click to go back*/
+    /*hamburger menu icon
+}*/
 
 
-}
+
+/*#menu.open::before {
+    content: "☰";
+    /*click to go back }*/
 
 .open a {
     display: block;
@@ -1240,5 +1237,23 @@ footer {
 
 }
 
+@media screen and (max-width: 460px) {
+    .navigation ul {
+        display: block;
+    }
+
+    .page-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        /* background-color: var(--dark-slate-gray); */
+        background-color: #28464bff;
+        align-content: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+
+}
 
 
