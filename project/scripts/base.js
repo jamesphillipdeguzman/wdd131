@@ -96,10 +96,6 @@ hamburgerBtn.addEventListener('click', () => {
 
 
 
-
-
-
-
     // Declare an array object
 
     var portfolios = [
