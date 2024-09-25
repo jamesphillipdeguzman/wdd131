@@ -30,6 +30,7 @@
             <li><a href="about.html" id="about">About</a></li>
             <li><a href="contact.html" id="contact">Contact</a></li>
             <li><a href="portfolios.html" id="portfolio">Portfolios</a></li>
+            <li><a href="form.html" id="product">Products</a></li>
 
         </ul>
         <button id="menu" aria-label="menu"></button>
@@ -58,10 +59,9 @@
 
         <form action="thanks.html" method="get" id="signup-form">
             <div class="contact-section">
-                <label for="fname">Name<input type="text" id="fname" name="fname" required></label>
-                <label for="email">Email
-                    <input type="email" id="email" required>
-                </label>
+                <label for="fname" class="name-label">Name<input type="text" id="fname" name="fname" required></label>
+                <label for="email" class="email-label">Email<input type="email" id="email" required></label>
+                <label for="message" class="message"><textarea name="message" id="message" placeholder="type your message here..."></textarea></label>
                 <button id="submit">Sign me up</button>
             </div>
         </form>

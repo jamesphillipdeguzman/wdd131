@@ -29,6 +29,7 @@
             <li><a href="about.html" id="about">About</a></li>
             <li><a href="contact.html" id="contact">Contact</a></li>
             <li><a href="portfolios.html" id="portfolio" class="active">Portfolios</a></li>
+            <li><a href="../form.html" id="product">Products</a></li>
 
         </ul>
         <button id="menu" aria-label="menu"></button>
@@ -57,7 +58,8 @@
 
         <h2 id="choose">Choose a website portfolio</h2>
         <div class="dropdown-container">
-            <select>
+            <!-- <label for="my-portfolio">My Porfolios</label> -->
+            <select id="my-portfolios">
                 <option value="">Select a portfolio</option>
                 <option value="Place page">Portfolio 1</option>
                 <option value="WDD131 home page">Portfolio 2</option>
@@ -83,25 +85,28 @@
 
                     </div>
                     <div class="picturediv">
-                        <a href="https://jamesphillipdeguzman.github.io/wdd131/place.html">
-                            <picture>
-                                <source
-                                    srcset="images/project-images/portfolio-1.webp 1900w"
-                                    media="(min-width: 600px)"
-                                    sizes="(min-width: 600px) 600px, 100vw">
-                                <source
-                                    srcset="images/project-images/portfolio-1-small.webp 500w"
-                                    media="(min-width: 599px)"
-                                    sizes="(min-width: 599px) 500px, 100vw">
+
+
+                                <!-- <source
+                                    srcset="images/project-images/portfolio-1.webp"
+                                    media="(min-width: 600px)"> -->
+                                    <!-- sizes="(min-width: 600px) 600px, 100vw"> -->
+                                <!-- <source
+                                    srcset="images/project-images/portfolio-1-small.webp"
+                                    media="(min-width: 599px)"> -->
+                                    <!-- sizes="(min-width: 599px) 500px, 100vw"> -->
+
+                                <a href="https://jamesphillipdeguzman.github.io/wdd131/place.html">
                                 <img
-                                    src="images/project-images/portfolio-1-small.webp"
+                                    src="images/project-images/portfolio-1.webp"
 
                                     alt="Portfolio 1: place.html"
                                     width="300"
                                     height="200"
-                                    loading="lazy">
-                            </picture>
-                        </a>
+                                    loading="eager">
+                                </a>
+
+
                     </div>
                     <div class="descdiv">
                         <p class="project-desc">
@@ -116,22 +121,23 @@
                         <h3 class="project-title">Portfolio 2: WDD131 home page </h3>
                     </div>
                     <div class="picturediv">
-                        <a href="https://jamesphillipdeguzman.github.io/wdd131/index.html">
-                            <source
-                                srcset="images/project-images/portfolio-2.webp 1900w"
-                                media="(min-width: 600px)"
-                                sizes="(min-width: 600px) 600px, 100vw">
-                            <source
-                                srcset="images/project-images/portfolio-2-small.webp 500w"
-                                media="(min-width: 599px)"
-                                sizes="(min-width: 599px) 500px, 100vw">
+
+                            <!-- <source
+                                srcset="images/project-images/portfolio-2.webp"
+                                media="(min-width: 600px)"> -->
+                                <!-- sizes="(min-width: 600px) 600px, 100vw"> -->
+                            <!-- <source
+                                srcset="images/project-images/portfolio-2-small.webp"
+                                media="(min-width: 599px)"> -->
+                                <!-- sizes="(min-width: 599px) 500px, 100vw"> -->
+                            <a href="https://jamesphillipdeguzman.github.io/wdd131/index.html">
                             <img
                                 src="images/project-images/portfolio-2.webp"
                                 alt="Portfolio 2: index.html"
                                 width="300"
                                 height="270"
                                 loading="lazy">
-                        </a>
+                            </a>
                     </div>
                     <div class="descdiv">
                         <p class="project-desc">
@@ -146,22 +152,23 @@
                         <h3 class="project-title">Portfolio 3: Filtered temples page </h3>
                     </div>
                     <div class="picturediv">
-                        <a href="https://jamesphillipdeguzman.github.io/wdd131/filtered-temples.html">
-                            <source
-                                srcset="images/project-images/portfolio-3.webp 1900w"
-                                media="(min-width: 600px)"
-                                sizes="(min-width: 600px) 600px, 100vw">
-                            <source
-                                srcset="images/project-images/portfolio-3-small.webp 500w"
-                                media="(min-width: 599px)"
-                                sizes="(min-width: 599px) 500px, 100vw">
+
+                            <!-- <source
+                                srcset="images/project-images/portfolio-3.webp"
+                                media="(min-width: 600px)"> -->
+                                <!-- sizes="(min-width: 600px) 600px, 100vw"> -->
+                            <!-- <source
+                                srcset="images/project-images/portfolio-3-small.webp"
+                                media="(min-width: 599px)"> -->
+                                <!-- sizes="(min-width: 599px) 500px, 100vw"> -->
+                            <a href="https://jamesphillipdeguzman.github.io/wdd131/filtered-temples.html">
                             <img
                                 src="images/project-images/portfolio-3.webp"
                                 alt="Portfolio 3: "
                                 width="300"
                                 height="270"
                                 loading="lazy">
-                        </a>
+                            </a>
                     </div>
                     <div class="descdiv">
                         <p class="project-desc">
@@ -175,22 +182,23 @@
                         <h3 class="project-title">Portfolio 4: Unfiltered temples page </h3>
                     </div>
                     <div class="picturediv">
-                        <a href="https://jamesphillipdeguzman.github.io/wdd131/temples.html">
-                            <source
-                                srcset="images/project-images/portfolio-4.webp 1900w"
-                                media="(min-width: 600px)"
-                                sizes="(min-width: 600px) 600px, 100vw">
-                            <source
-                                srcset="images/project-images/portfolio-4-small.webp 500w"
-                                media="(min-width: 599px)"
-                                sizes="(min-width: 599px) 500px, 100vw">
+
+                            <!-- <source
+                                srcset="images/project-images/portfolio-4.webp"
+                                media="(min-width: 600px)"> -->
+                                <!-- sizes="(min-width: 600px) 600px, 100vw"> -->
+                            <!-- <source
+                                srcset="images/project-images/portfolio-4-small.webp"
+                                media="(min-width: 599px)"> -->
+                                <!-- sizes="(min-width: 599px) 500px, 100vw"> -->
+                            <a href="https://jamesphillipdeguzman.github.io/wdd131/temples.html">
                             <img
                                 src="images/project-images/portfolio-4.webp"
                                 alt="Portfolio 4: "
                                 width="300"
                                 height="270"
                                 loading="lazy">
-                        </a>
+                            </a>
                     </div>
                     <div class="descdiv">
                         <p class="project-desc">
@@ -204,22 +212,23 @@
                         <h3 class="project-title">Portfolio 5: Holy grail layout (practice) </h3>
                     </div>
                     <div class="picturediv">
-                        <a href="https://jamesphillipdeguzman.github.io/wdd131/csspractice/holy-grail-layout-flex.html">
-                            <source
-                                srcset="images/project-images/portfolio-5.webp 1900w"
-                                media="(min-width: 600px)"
-                                sizes="(min-width: 600px) 600px, 100vw">
-                            <source
-                                srcset="images/project-images/portfolio-5-small.webp 500w"
-                                media="(min-width: 599px)"
-                                sizes="(min-width: 599px) 500px, 100vw">
+
+                            <!-- <source
+                                srcset="images/project-images/portfolio-5.webp"
+                                media="(min-width: 600px)"> -->
+                                <!-- sizes="(min-width: 600px) 600px, 100vw"> -->
+                            <!-- <source
+                                srcset="images/project-images/portfolio-5-small.webp"
+                                media="(min-width: 599px)"> -->
+                                <!-- sizes="(min-width: 599px) 500px, 100vw"> -->
+                            <a href="https://jamesphillipdeguzman.github.io/wdd131/csspractice/holy-grail-layout-flex.html">
                             <img
                                 src="images/project-images/portfolio-5.webp"
                                 alt="Portfolio 5: "
                                 width="300"
                                 height="270"
                                 loading="lazy">
-                        </a>
+                            </a>
                     </div>
                     <div class="descdiv">
                         <p class="project-desc">
@@ -233,22 +242,23 @@
                         <h3 class="project-title">Portfolio 6: Whitewater rafting site (WDD130) </h3>
                     </div>
                     <div class="picturediv">
-                        <a href="https://jamesphillipdeguzman.github.io/wdd130/wwr/index.html">
-                            <source
-                                srcset="images/project-images/portfolio-6.webp 1900w"
-                                media="(min-width: 600px)"
-                                sizes="(min-width: 600px) 600px, 100vw">
-                            <source
-                                srcset="images/project-images/portfolio-6-small.webp 500w"
-                                media="(min-width: 599px)"
-                                sizes="(min-width: 599px) 500px, 100vw">
+
+                            <!-- <source
+                                srcset="images/project-images/portfolio-6.webp"
+                                media="(min-width: 600px)"> -->
+                                <!-- sizes="(min-width: 600px) 600px, 100vw"> -->
+                            <!-- <source
+                                srcset="images/project-images/portfolio-6-small.webp"
+                                media="(min-width: 599px)"> -->
+                                <!-- sizes="(min-width: 599px) 500px, 100vw"> -->
+                            <a href="https://jamesphillipdeguzman.github.io/wdd130/wwr/index.html">
                             <img
                                 src="images/project-images/portfolio-6.webp"
                                 alt="Portfolio 6: "
                                 width="300"
                                 height="270"
                                 loading="lazy">
-                        </a>
+                            </a>
                     </div>
                     <div class="descdiv">
                         <p class="project-desc">

@@ -51,12 +51,30 @@ hamburgerBtn.addEventListener('click', () => {
     const choice = document.querySelector('#choose');
     const loadIt = document.querySelector('.image-loader');
     const signupBtn = document.querySelector('.signup-btn');
+    const reviewBtn = document.querySelector('#review-btn');
 
-    signupBtn.addEventListener('click', () => {
-        // open the contacts page when user clicks on signup button
-        window.location.href = 'signup.html';
+    if (signupBtn) {
 
-    });
+        signupBtn.addEventListener('click', () => {
+            // open the contacts page when user clicks on signup button
+            window.location.href = 'signup.html';
+
+        });
+
+    }
+
+    if (reviewBtn) {
+
+        reviewBtn.addEventListener('click', () => {
+
+
+            // open the review page when user clicks on review button
+            window.location.href = 'project/review.html';
+
+        });
+    }
+
+
 
     // Initialize dropdown value to nothing
     let dropdownValue = '';
@@ -74,10 +92,6 @@ hamburgerBtn.addEventListener('click', () => {
         chosenPortfolio = choice.value;
 
     });
-
-
-
-
 
 
 
